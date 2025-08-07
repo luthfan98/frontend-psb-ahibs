@@ -25,7 +25,7 @@ export default function Galeri() {
 
   const images: ImageItem[] = [
     {
-      src: 'https://images.unsplash.com/photo-1618335829737-25a411562248?q=80&w=800',
+      src: '/assets/img/halaqah.png',
       title: 'Kegiatan Mengaji',
       description: 'Suasana khusyuk santri sedang mengaji bersama dalam halaqah pagi dengan bimbingan ustadz yang berpengalaman.',
       category: 'ibadah',
@@ -34,7 +34,7 @@ export default function Galeri() {
       likes: 127
     },
     {
-      src: 'https://images.unsplash.com/photo-1579887829424-5c4a6e42b6a7?q=80&w=800',
+      src: '/assets/img/kitabkuning.png',
       title: 'Pembelajaran Kitab',
       description: 'Diskusi mendalam tentang kitab kuning turats klasik dengan metode sorogan dan bandongan.',
       category: 'pembelajaran',
@@ -43,7 +43,7 @@ export default function Galeri() {
       likes: 203
     },
     {
-      src: 'https://images.unsplash.com/photo-1594582452339-b946892534de?q=80&w=800',
+      src: '/assets/img/outdoor.png',
       title: 'Kegiatan Outdoor',
       description: 'Aktivitas santri di luar ruangan sebagai bagian dari program pengembangan karakter dan fisik.',
       category: 'ekstrakurikuler',
@@ -52,7 +52,7 @@ export default function Galeri() {
       likes: 156
     },
     {
-      src: 'https://images.unsplash.com/photo-1583923228148-39311c33a925?q=80&w=800',
+      src: '/assets/img/mentoring.png',
       title: 'Sesi Mentoring',
       description: 'Bimbingan personal intensif dengan ustadz untuk pengembangan spiritual dan akademik santri.',
       category: 'pembelajaran',
@@ -61,7 +61,7 @@ export default function Galeri() {
       likes: 189
     },
     {
-      src: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=800',
+      src: '/assets/img/tahfidz.png',
       title: 'Program Tahfidz',
       description: 'Kegiatan menghafal Al-Qur\'an dengan metode talaqqi dan muraja\'ah yang terbukti efektif.',
       category: 'tahfidz',
@@ -70,7 +70,7 @@ export default function Galeri() {
       likes: 245
     },
     {
-      src: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800',
+      src: '/assets/img/diskusi.png',
       title: 'Diskusi Kelompok',
       description: 'Santri berdiskusi aktif dalam kelompok belajar untuk memahami materi dengan lebih mendalam.',
       category: 'pembelajaran',
