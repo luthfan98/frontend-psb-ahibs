@@ -47,13 +47,14 @@ export default function Navbar() {
                     width={40}
                     height={40}
                     className="group-hover:scale-110 transition-transform duration-300"
+                    unoptimized
                 />
                 {/* Shimmer effect background */}
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
               </div>
               <div>
                 <span className="text-xl font-bold bg-gradient-to-r from-emerald-600 via-green-600 to-teal-600 bg-clip-text text-transparent">
-                  Al Hadaharah
+                  Al Hadharah
                 </span>
                 <div className="text-xs text-gray-500 font-medium -mt-1">
                   Islamic Boarding School

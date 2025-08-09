@@ -1,5 +1,5 @@
 // src/app/layout.tsx
-import type { Metadata } from "next";
+import type { Metadata,Viewport  } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 
@@ -31,12 +31,15 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-  },
 };
+
+// ✅ Pindahkan viewport ke ekspor terpisah
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
+
 
 export default function RootLayout({
   children,

@@ -1,20 +1,20 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowRight, Play, Star, Users, BookOpen, Award, Calendar, MapPin, Sparkles, Heart } from 'lucide-react';
+import { ArrowRight, Play, Star, BookOpen, Calendar, MapPin, Sparkles, Heart, Building2, Zap } from 'lucide-react';
 
 export default function Hero() {
   const highlights = [
-    { icon: Users, text: "500+ Santri Aktif", color: "text-emerald-600" },
-    { icon: BookOpen, text: "Program Tahfizh Terbaik", color: "text-teal-600" },
-    { icon: Award, text: "Terakreditasi A", color: "text-amber-600" },
+    { icon: Building2, text: "Pesantren Baru 2025", color: "text-emerald-600" },
+    { icon: BookOpen, text: "Program Tahfizh Intensif", color: "text-teal-600" },
+    { icon: Zap, text: "Generasi Pertama", color: "text-amber-600" },
   ];
 
   const features = [
-    "✅ Kurikulum Pesantren + Nasional",
-    "✅ Fasilitas Modern & Lengkap", 
-    "✅ Pembinaan 24 Jam",
-    "✅ Program Tahfizh Intensif"
+    " ✅ Kurikulum Modern & Islami",
+    " ✅ Fasilitas Baru & Lengkap", 
+    " ✅ Pembinaan Personal 24 Jam",
+    " ✅ Menjadi Pelopor & Teladan"
   ];
 
   return (
@@ -60,7 +60,7 @@ export default function Hero() {
           <Star className="w-8 h-8 text-amber-300/40 fill-current" />
         </div>
         <div className="absolute top-1/2 right-1/3 animate-bounce" style={{ animationDelay: '2.5s', animationDuration: '4.5s' }}>
-          <Award className="w-9 h-9 text-teal-300/40" />
+          <Building2 className="w-9 h-9 text-teal-300/40" />
         </div>
         <div className="absolute top-1/4 left-1/3 animate-bounce" style={{ animationDelay: '3s', animationDuration: '6s' }}>
           <Heart className="w-7 h-7 text-emerald-300/30 fill-current" />
@@ -78,28 +78,28 @@ export default function Hero() {
                   بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
                 </p>
                 <p className="text-sm text-emerald-200 italic">
-                  "Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang"
+                  &quot;Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang&quot;
                 </p>
               </div>
 
-              {/* Badge with Islamic Touch */}
+              {/* Badge with Islamic Touch - Updated for new pesantren */}
               <div className="inline-flex items-center gap-3 bg-gradient-to-r from-emerald-500/20 to-teal-500/20 backdrop-blur-sm text-emerald-100 px-6 py-3 rounded-full text-sm font-medium border border-emerald-400/30 shadow-lg">
                 <Calendar className="w-5 h-5" />
-                <span className="font-semibold">Pendaftaran Santri Baru 2025/2026</span>
+                <span className="font-semibold">Pesantren Baru - Penerimaan Perdana 2025/2026</span>
                 <div className="flex items-center gap-1">
                   <div className="w-2 h-2 bg-amber-400 rounded-full animate-pulse" />
                   <Sparkles className="w-4 h-4 text-amber-400" />
                 </div>
               </div>
 
-              {/* Main Heading with Islamic Typography */}
+              {/* Main Heading with Islamic Typography - Updated */}
               <div className="space-y-6">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                  <span className="text-white">Penerimaan</span>
+                  <span className="text-white">Jadilah Bagian</span>
                   <span className="block bg-gradient-to-r from-amber-300 via-emerald-300 to-teal-300 bg-clip-text text-transparent">
-                    Santri Baru
+                    Generasi Pertama
                   </span>
-                  <span className="text-emerald-100">Telah Dibuka!</span>
+                  <span className="text-emerald-100">Pesantren Kami!</span>
                 </h1>
                 
                 {/* Islamic Decorative Line */}
@@ -114,26 +114,38 @@ export default function Hero() {
                 </div>
               </div>
 
-              {/* Description with Islamic Values */}
+              {/* Description with Islamic Values - Updated */}
               <div className="space-y-4">
                 <p className="text-lg md:text-xl text-emerald-100 leading-relaxed max-w-2xl">
-                  Bergabunglah dalam lingkungan Islami terbaik dengan program tahfizh unggulan. 
-                  <span className="font-semibold text-amber-200"> Wujudkan generasi Qur'ani</span> yang 
-                  berakhlak mulia dan berprestasi dalam akademik.
+                  Menjadi perintis dalam membangun tradisi keislaman yang unggul. Bergabunglah sebagai 
+                  <span className="font-semibold text-amber-200"> santri generasi pertama</span> yang akan 
+                  menjadi fondasi dan teladan bagi generasi selanjutnya.
                 </p>
+                
+                {/* Special Message for First Generation */}
+                <div className="bg-gradient-to-r from-amber-400/20 to-emerald-400/20 backdrop-blur-sm rounded-xl p-4 border border-amber-400/30">
+                  <div className="flex items-center gap-3 mb-2">
+                    <Zap className="w-5 h-5 text-amber-400" />
+                    <span className="text-amber-200 font-semibold">Keistimewaan Generasi Pertama</span>
+                  </div>
+                  <p className="text-emerald-200 text-sm">
+                    Kesempatan langka menjadi pioneer, membentuk tradisi, dan meninggalkan jejak bersejarah 
+                    sebagai santri pendiri yang akan dikenang sepanjang masa.
+                  </p>
+                </div>
                 
                 {/* Islamic Quote */}
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-emerald-400/20">
                   <p className="text-emerald-200 italic text-center font-medium">
-                    "خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ"
+                    &quot;وَأَنِ اعْبُدُونِي هَٰذَا صِرَاطٌ مُّسْتَقِيمٌ&quot;
                   </p>
                   <p className="text-amber-200 text-sm text-center mt-2">
-                    "Sebaik-baik kalian adalah yang mempelajari Al-Quran dan mengajarkannya" - HR. Bukhari
+                    &quot;Dan sembahlah Aku. Inilah jalan yang lurus&quot; - QS. Yasin: 61
                   </p>
                 </div>
               </div>
 
-              {/* Features with Islamic Style */}
+              {/* Features with Islamic Style - Updated */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {features.map((feature, index) => (
                   <div 
@@ -149,7 +161,7 @@ export default function Hero() {
                 ))}
               </div>
 
-              {/* Highlights with Islamic Design */}
+              {/* Highlights with Islamic Design - Updated */}
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
                 {highlights.map((item, index) => {
                   const IconComponent = item.icon;
@@ -165,15 +177,15 @@ export default function Hero() {
                 })}
               </div>
 
-              {/* CTA Buttons with Islamic Style */}
+              {/* CTA Buttons with Islamic Style - Updated */}
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-6">
                 <Link 
                   href="/daftar" 
-                  className="group relative overflow-hidden bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:from-amber-600 hover:via-amber-500 hover:to-amber-600 text-emerald-900 font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 shadow-2xl hover:shadow-amber-500/25 transform hover:-translate-y-2 hover:scale-105 min-w-[220px]"
+                  className="group relative overflow-hidden bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:from-amber-600 hover:via-amber-500 hover:to-amber-600 text-emerald-900 font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 shadow-2xl hover:shadow-amber-500/25 transform hover:-translate-y-2 hover:scale-105 min-w-[260px]"
                 >
                   <span className="relative z-10 flex items-center justify-center gap-3">
-                    <Sparkles className="w-5 h-5" />
-                    Daftar Sekarang
+                    <Zap className="w-5 h-5" />
+                    Jadi Generasi Pertama
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                   </span>
                   {/* Shine Effect */}
@@ -182,7 +194,7 @@ export default function Hero() {
 
                 <button className="group flex items-center gap-3 text-emerald-200 hover:text-white font-semibold py-4 px-6 rounded-full border-2 border-emerald-300/30 hover:border-emerald-300 hover:bg-emerald-600/20 backdrop-blur-sm transition-all duration-300">
                   <Play className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" fill="currentColor" />
-                  Tonton Video Profil
+                  Tonton Visi Pesantren
                 </button>
               </div>
 
@@ -195,104 +207,88 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Right Content - Enhanced Hero Image */}
+            {/* Right Content - Enhanced Hero Image with Background Image */}
             <div className="relative">
               <div className="relative">
-                {/* Main Image Container with Islamic Design */}
+                {/* Main Image Container with Background Image */}
                 <div className="relative bg-gradient-to-br from-white/10 to-emerald-500/10 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-500 hover:shadow-emerald-500/20 border border-white/20">
-                  {/* Enhanced Islamic Pattern Background */}
-                  <div className="absolute inset-0 opacity-20">
-                    <svg className="w-full h-full" viewBox="0 0 400 500" fill="none">
-                      <defs>
-                        <pattern id="detailed-islamic-pattern" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
-                          <g stroke="white" strokeWidth="1" fill="none">
-                            <circle cx="30" cy="30" r="20"/>
-                            <circle cx="30" cy="30" r="12"/>
-                            <circle cx="30" cy="30" r="6"/>
-                            <path d="M30 10 L45 25 L30 40 L15 25 Z"/>
-                            <path d="M10 30 L25 45 L40 30 L25 15 Z"/>
-                            <path d="M30 50 L45 35 L30 20 L15 35 Z"/>
-                            <path d="M50 30 L35 15 L20 30 L35 45 Z"/>
-                          </g>
-                          <circle cx="30" cy="30" r="3" fill="white"/>
-                        </pattern>
-                      </defs>
-                      <rect width="400" height="500" fill="url(#detailed-islamic-pattern)" className="text-emerald-400"/>
-                    </svg>
-                  </div>
                   
-                  {/* Content with Islamic Elements */}
-                  <div className="aspect-[4/5] flex flex-col items-center justify-center relative p-8">
-                    {/* Top Islamic Calligraphy */}
+                  {/* Background Image */}
+                  <div className="absolute inset-0">
+                    <img 
+                      src="/assets/img/card_home.png"
+                      alt="Pesantren Islamic Architecture"
+                      className="w-full h-full object-cover"
+                    />
+                    {/* Overlay gradient for better text readability */}
+                    <div className="absolute inset-0 from-emerald-900/10 via-emerald-800/10 to-teal-900/10"></div>
+                  </div>
+
+                  
+                  
+                  {/* Content with Islamic Elements - Updated with better contrast */}
+                  <div className="aspect-[4/5] flex flex-col items-center justify-center relative p-8 z-10">
+                    {/* Top Islamic Calligraphy - Updated */}
                     <div className="text-center mb-6">
-                      <p className="text-3xl text-amber-300 font-bold mb-2">
-                        ٱقْرَأْ
+                      <p className="text-3xl text-amber-300 font-bold mb-2 drop-shadow-lg">
+                        بَرَكَاتُهُ
                       </p>
-                      <p className="text-emerald-200 text-sm italic">
-                        "Bacalah!" - Wahyu Pertama
+                      <p className="text-emerald-200 text-sm italic drop-shadow">
+                        &quot;Keberkahan-Nya&quot; - Memulai dengan Barakah
                       </p>
                     </div>
                     
-                    {/* Main Icon */}
-                    <div className="w-36 h-36 bg-gradient-to-br from-amber-400 via-emerald-400 to-teal-400 rounded-full flex items-center justify-center mb-6 shadow-2xl relative overflow-hidden">
-                      {/* Inner Pattern */}
-                      <div className="absolute inset-2 border-2 border-white/30 rounded-full"></div>
-                      <BookOpen className="w-20 h-20 text-white relative z-10" />
-                      {/* Sparkle Effect */}
-                      <div className="absolute top-2 right-2">
-                        <Sparkles className="w-6 h-6 text-white/70" />
-                      </div>
-                    </div>
                     
-                    {/* Title */}
-                    <h3 className="text-2xl font-bold text-white mb-2 text-center">
-                      Santri Berprestasi
+                    
+                    {/* Title - Updated with better contrast */}
+                    <h3 className="text-2xl font-bold text-white mb-2 text-center drop-shadow-lg">
+                      Generasi Perintis
                     </h3>
-                    <p className="text-emerald-200 font-medium text-center max-w-xs">
-                      Menghafal Al-Quran & Berprestasi Akademik dengan Akhlak Mulia
+                    <p className="text-emerald-200 font-medium text-center max-w-xs drop-shadow">
+                      Menjadi Pendiri Tradisi Keislaman yang Mulia & Berkesan Sepanjang Masa
                     </p>
 
                     {/* Bottom Decoration */}
                     <div className="mt-6 flex items-center gap-2">
-                      <div className="w-2 h-2 bg-amber-400 rounded-full animate-pulse" />
-                      <div className="w-8 h-0.5 bg-emerald-300"></div>
-                      <Star className="w-5 h-5 text-amber-400 fill-current" />
-                      <div className="w-8 h-0.5 bg-emerald-300"></div>
-                      <div className="w-2 h-2 bg-amber-400 rounded-full animate-pulse" />
+                      <div className="w-2 h-2 bg-amber-400 rounded-full animate-pulse drop-shadow" />
+                      <div className="w-8 h-0.5 bg-emerald-300 drop-shadow"></div>
+                      <Star className="w-5 h-5 text-amber-400 fill-current drop-shadow" />
+                      <div className="w-8 h-0.5 bg-emerald-300 drop-shadow"></div>
+                      <div className="w-2 h-2 bg-amber-400 rounded-full animate-pulse drop-shadow" />
                     </div>
                   </div>
 
-                  {/* Enhanced Floating Achievement Cards */}
-                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-xl p-4 shadow-xl border border-amber-200/50">
+                  {/* Enhanced Floating Achievement Cards - Updated for new pesantren */}
+                  <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-xl border border-amber-200/50">
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 bg-gradient-to-br from-amber-400 to-amber-500 rounded-full flex items-center justify-center">
-                        <Award className="w-5 h-5 text-white" />
+                        <Zap className="w-5 h-5 text-white" />
                       </div>
                       <div>
-                        <div className="text-sm font-bold text-slate-800">Juara 1</div>
-                        <div className="text-xs text-slate-600">MTQ Nasional</div>
+                        <div className="text-sm font-bold text-slate-800">Pioneer</div>
+                        <div className="text-xs text-slate-600">Angkatan 1</div>
                       </div>
                     </div>
                   </div>
 
-                  <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-xl p-4 shadow-xl border border-emerald-200/50">
+                  <div className="absolute bottom-4 left-4 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-xl border border-emerald-200/50">
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-full flex items-center justify-center">
                         <BookOpen className="w-5 h-5 text-white" />
                       </div>
                       <div>
-                        <div className="text-sm font-bold text-slate-800">30 Juz</div>
-                        <div className="text-xs text-slate-600">Hafal Quran</div>
+                        <div className="text-sm font-bold text-slate-800">Tahfizh</div>
+                        <div className="text-xs text-slate-600">Intensif</div>
                       </div>
                     </div>
                   </div>
 
-                  <div className="absolute top-1/2 left-4 bg-white/90 backdrop-blur-sm rounded-xl p-3 shadow-xl border border-teal-200/50">
+                  <div className="absolute top-1/2 left-4 bg-white/95 backdrop-blur-sm rounded-xl p-3 shadow-xl border border-teal-200/50">
                     <div className="flex items-center gap-2">
-                      <Heart className="w-5 h-5 text-pink-500 fill-current" />
+                      <Building2 className="w-5 h-5 text-teal-600" />
                       <div>
-                        <div className="text-xs font-bold text-slate-800">Akhlak</div>
-                        <div className="text-xs text-slate-600">Mulia</div>
+                        <div className="text-xs font-bold text-slate-800">Fasilitas</div>
+                        <div className="text-xs text-slate-600">Modern</div>
                       </div>
                     </div>
                   </div>

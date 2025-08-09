@@ -1,7 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import { Camera, Eye, X, ZoomIn, Calendar, MapPin, Heart, Users, Award, BookOpen } from 'lucide-react';
+import { type ElementType } from 'react';
+import Image from 'next/image';
+import { Camera, X, ZoomIn, Calendar, MapPin, Heart, Users, Award, BookOpen } from 'lucide-react';
 
 interface ImageItem {
   src: string;
@@ -16,7 +18,7 @@ interface ImageItem {
 interface StatItem {
   number: string;
   label: string;
-  icon: any;
+  icon: ElementType;
 }
 
 export default function Galeri() {
@@ -162,12 +164,16 @@ export default function Galeri() {
                 onClick={() => openModal(index)}
               >
                 <div className="relative overflow-hidden aspect-square">
-                  <img
-                    src={image.src}
-                    alt={image.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
-                    loading={index < 2 ? 'eager' : 'lazy'}
-                  />
+                  <div className="relative w-full h-full"> {/* atau h-[300px], sesuai kebutuhan */}
+                    <Image
+                      src={image.src}
+                      alt={image.title}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                      loading={index < 2 ? 'eager' : 'lazy'}
+                      unoptimized
+                    />
+                  </div>
                   
                   {/* Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -279,11 +285,15 @@ export default function Galeri() {
               <X className="w-6 h-6 text-slate-800" />
             </button>
             <div className="aspect-video md:aspect-[4/3] relative">
-              <img
-                src={filteredImages[selectedImage].src}
-                alt={filteredImages[selectedImage].title}
-                className="w-full h-full object-cover"
-              />
+              <div className="relative w-full h-full"> {/* atau tinggi sesuai desain */}
+                <Image
+                  src={filteredImages[selectedImage].src}
+                  alt={filteredImages[selectedImage].title}
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+              </div>
             </div>
             <div className="p-6 md:p-8">
               <div className="flex items-center justify-between mb-4">

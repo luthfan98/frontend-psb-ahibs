@@ -3,7 +3,6 @@
 
 import { useState, useMemo } from 'react';
 import { HeartHandshake, Info, Save } from 'lucide-react';
-import Link from 'next/link';
 
 // Pilihan nominal infaq yang sudah ditentukan
 const OPSI_INFAQ = [

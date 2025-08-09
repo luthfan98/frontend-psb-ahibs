@@ -2,14 +2,13 @@
 'use client';
 
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 import {
-    LayoutDashboard, User, FileText, Gift, CreditCard, Calendar, CheckCircle2, Loader, Clock, HelpCircle, Megaphone,
+    LayoutDashboard, User, FileText, Gift, CreditCard, Calendar, HelpCircle, Megaphone,
     CheckSquare
 } from 'lucide-react';
 
 export default function DashboardPage() {
-    const router = useRouter();
+    
 
     // --- Data ini seharusnya ditarik dari database untuk pengguna yang login ---
     const userData = {

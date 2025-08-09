@@ -36,9 +36,10 @@ export default function Cta() {
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
                 Siap Menjadi Bagian dari
                 <span className="block bg-gradient-to-r from-emerald-400 via-green-400 to-teal-400 bg-clip-text text-transparent animate-pulse">
-                  Generasi Qur'ani?
+                  Generasi Qur&#39;ani?
                 </span>
               </h2>
+
               <div className="flex items-center justify-center gap-2 mb-6">
                 <div className="w-12 h-0.5 bg-gradient-to-r from-transparent to-emerald-400" />
                 <Star className="w-6 h-6 text-yellow-400 fill-current" />

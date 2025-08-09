@@ -21,6 +21,7 @@ export default function DaftarPage() {
           alt="Background"
           fill
           className="object-cover"
+          unoptimized
         />
         <div className="absolute inset-0 backdrop-blur-sm bg-black/30" />
       </div>
@@ -48,6 +49,7 @@ export default function DaftarPage() {
                     width={120}
                     height={120}
                     className="w-full h-auto"
+                    unoptimized
                   />
                 </div>
               </div>

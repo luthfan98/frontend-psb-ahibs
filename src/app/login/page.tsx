@@ -44,9 +44,14 @@ export default function LoginPage() {
             // Placeholder untuk simulasi sukses
             alert('Login berhasil! (Ini hanya simulasi)');
 
-        } catch (err: any) {
-            setError(err.message);
-            console.error(err);
+        } catch (err) {
+            if (err instanceof Error) {
+                setError(err.message);
+                console.error(err);
+            } else {
+                setError("Unexpected error");
+                console.error("Unknown error", err);
+            }
         }
     };
 
@@ -61,6 +66,7 @@ export default function LoginPage() {
                     alt="Background"
                     fill
                     className="object-cover"
+                    unoptimized
                 />
                 <div className="absolute inset-0 backdrop-blur-sm bg-black/30" />
                 </div>
@@ -179,7 +185,7 @@ export default function LoginPage() {
                     {/* Islamic Quote */}
                     <div className="mt-6 text-center">
                         <p className="text-sm text-emerald-700 italic font-medium">
-                            "Dan barangsiapa bertakwa kepada Allah, niscaya Dia akan mengadakan baginya jalan keluar"
+                            &quot Dan barangsiapa bertakwa kepada Allah, niscaya Dia akan mengadakan baginya jalan keluar &quot
                         </p>
                         <p className="text-xs text-gray-500 mt-1">QS. At-Talaq: 2</p>
                     </div>

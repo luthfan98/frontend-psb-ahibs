@@ -1,9 +1,10 @@
 'use client';
 
 import { BookOpen, Landmark, Users, Award, Heart, Target, Star, Sparkles } from 'lucide-react';
+import { type ElementType } from 'react';
 
 interface Feature {
-  icon: any;
+  icon: ElementType;
   title: string;
   description: string;
   highlight?: string;
@@ -112,7 +113,7 @@ export default function Keunggulan() {
               بِسْمِ ٱللَّٰهِ نَبْدَأُ
             </p>
             <p className="text-sm text-emerald-600 italic">
-              "Dengan nama Allah kami memulai"
+              &quot;Dengan nama Allah kami memulai&quot;
             </p>
           </div>
 
@@ -151,10 +152,10 @@ export default function Keunggulan() {
           {/* Islamic Quote */}
           <div className="mt-8 bg-white/60 backdrop-blur-sm rounded-2xl p-6 max-w-3xl mx-auto border border-emerald-200/50 shadow-lg">
             <p className="text-emerald-700 italic text-lg font-medium mb-2">
-              "خَيْرُ النَّاسِ أَنْفَعُهُمْ لِلنَّاسِ"
+              &quot;خَيْرُ النَّاسِ أَنْفَعُهُمْ لِلنَّاسِ&quot;
             </p>
             <p className="text-emerald-600 text-sm">
-              "Sebaik-baik manusia adalah yang paling bermanfaat bagi manusia lainnya" - HR. Ahmad
+              &quot;Sebaik-baik manusia adalah yang paling bermanfaat bagi manusia lainnya&quot; - HR. Ahmad
             </p>
           </div>
         </div>
@@ -256,10 +257,10 @@ export default function Keunggulan() {
           {/* Islamic Quote */}
           <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 max-w-2xl mx-auto mb-8 border border-emerald-200/50 shadow-lg">
             <p className="text-emerald-700 italic font-medium mb-2">
-              "وَمَا كَانَ اللَّهُ لِيُضِيعَ إِيمَانَكُمْ"
+              &quot;وَمَا كَانَ اللَّهُ لِيُضِيعَ إِيمَانَكُمْ&quot;
             </p>
             <p className="text-emerald-600 text-sm">
-              "Dan Allah tidak akan menyia-nyiakan keimanan kalian" - QS. Al-Baqarah: 143
+              &quot;Dan Allah tidak akan menyia-nyiakan keimanan kalian&quot; - QS. Al-Baqarah: 143
             </p>
           </div>
 

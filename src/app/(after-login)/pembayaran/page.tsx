@@ -1,7 +1,8 @@
 'use client';
 
+import Image from 'next/image';
 import { useState } from 'react';
-import { User, GraduationCap, Wallet, ArrowRight, CaseSensitive, CheckCircle2, Clipboard, Clock, ChevronDown } from 'lucide-react';
+import { User, Wallet, ArrowRight, CaseSensitive, CheckCircle2, Clipboard, Clock, ChevronDown } from 'lucide-react';
 
 // Menambahkan logo untuk setiap metode pembayaran
 const metodeTripay = [
@@ -113,7 +114,7 @@ export default function PembayaranPage() {
                         onChange={() => setSelectedMetode(metode.code)}
                         className="absolute opacity-0 h-full w-full"
                       />
-                      <img src={metode.logo} alt={metode.name} className="h-8 w-auto object-contain" />
+                      <Image src={metode.logo} alt={metode.name} className="h-8 w-auto object-contain" unoptimized/>
                       <span className="font-semibold text-gray-800 flex-grow">{metode.name}</span>
                       <CheckCircle2 className={`h-6 w-6 text-teal-500 transition-opacity ${selectedMetode === metode.code ? 'opacity-100' : 'opacity-0'}`} />
                     </label>
@@ -139,7 +140,7 @@ export default function PembayaranPage() {
                     {selectedMetode === 'QRIS' ? (
                         <div className="text-center">
                             <p className="text-gray-600 mb-4">Scan kode QR di bawah ini dengan aplikasi perbankan atau e-wallet Anda.</p>
-                            <img src="/assets/img/qris-sample.png" alt="QRIS" className="w-56 h-56 mx-auto mb-4 p-2 bg-white border rounded-lg" />
+                            <Image src="/assets/img/qris-sample.png" alt="QRIS" className="w-56 h-56 mx-auto mb-4 p-2 bg-white border rounded-lg" unoptimized/>
                             <a href="/assets/img/qris-sample.png" download className="text-sm font-semibold text-teal-600 hover:text-teal-700">Unduh Kode QR</a>
                         </div>
                     ) : (

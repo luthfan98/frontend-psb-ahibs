@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, ChangeEvent, FormEvent } from 'react';
+import Image from 'next/image';
 import { User, KeyRound, Phone, Upload, CheckCircle } from 'lucide-react';
 
 interface InputFieldProps {
@@ -97,10 +98,11 @@ export default function SimpleProfilePage() {
             <div className="rounded-xl border border-gray-200 p-6">
               <h3 className="text-xl font-semibold text-gray-900 mb-6">Profil</h3>
               <div className="flex flex-col sm:flex-row items-center gap-6">
-                <img
+                <Image
                   src={profileImage}
                   alt="Foto Profil"
                   className="h-24 w-24 rounded-full object-cover ring-4 ring-teal-100"
+                  unoptimized
                 />
                 <div className="text-center sm:text-left">
                   <h2 className="text-lg font-bold text-gray-800">Ubah Foto Profil</h2>

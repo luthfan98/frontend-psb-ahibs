@@ -4,6 +4,7 @@
 import { useEffect } from 'react';
 import Link from 'next/link';
 import { Printer, ArrowLeft } from 'lucide-react';
+import Image from 'next/image';
 
 export default function CetakBuktiPage() {
     // Data ini idealnya diambil dari database berdasarkan ID transaksi
@@ -61,7 +62,7 @@ export default function CetakBuktiPage() {
                 <header className="flex justify-between items-center pb-6 border-b-2 border-black">
                     <div>
                         {/* Ganti dengan logo sekolah Anda */}
-                        <img src="/assets/img/logo_ahibs_bs.png" alt="Logo Sekolah" className="h-16 w-auto"/>
+                        <Image src="/assets/img/logo_ahibs_bs.png" alt="Logo Sekolah" className="h-16 w-auto" unoptimized/>
                     </div>
                     <div className="text-right">
                         <h1 className="text-2xl font-bold text-gray-800">Pondok Pesantren Modern</h1>

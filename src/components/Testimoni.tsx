@@ -1,141 +1,82 @@
-import { Quote, Star, Heart, GraduationCap, Users, Award, Calendar, Sparkles } from 'lucide-react';
+import { Quote, Star, Sparkles, Award, Users, BookOpen } from 'lucide-react';
+import Image from 'next/image';
 
-export default function Testimoni() {
-  const testimonials = [
+export default function DukunganTokoh() {
+  const dukungan = [
     {
-      quote: "Alhamdulillah, anak saya menjadi lebih mandiri dan agamis setelah di pesantren ini. Pengajarnya sangat sabar dan perhatian dalam membimbing setiap santri.",
-      name: "Ahmad Subarjo",
-      role: "Orang Tua Santri",
-      location: "Sleman, Yogyakarta",
-      rating: 5,
-      year: "2024",
-      avatar: "https://i.pravatar.cc/150?u=a042581f4e29026704d",
-      category: "parent",
-      color: "from-blue-500 to-cyan-500"
+      quote: "Alhamdulillah, dengan berdirinya pondok pesantren ini, umat Islam di daerah ini memiliki wahana pendidikan yang menggabungkan kekuatan spiritual dan intelektual. Semoga menjadi mercusuar ilmu dan akhlak mulia bagi generasi mendatang.",
+      name: "Prof. Dr. KH. Ahmad Thohir Luth, M.A.",
+      role: "Rais Aam PBNU",
+      organization: "Nahdlatul Ulama",
+      location: "Jakarta",
+      avatar: "https://i.pravatar.cc/150?u=kiai1",
+      color: "from-emerald-600 to-green-600",
+      pattern: "geometric"
     },
     {
-      quote: "Lingkungan yang sangat mendukung untuk menghafal Al-Qur'an. Saya berhasil menyelesaikan hafalan 30 juz di sini. Terima kasih para ustadz dan ustadzah.",
-      name: "Fatimah Az-Zahra",
-      role: "Alumni Program Tahfidz",
-      location: "Brebes, Yogyakarta",
-      rating: 5,
-      year: "2022",
-      avatar: "https://i.pravatar.cc/150?u=a04258114e29026702d",
-      category: "alumni",
-      color: "from-emerald-500 to-green-500"
+      quote: "Pembangunan pondok pesantren di era modern ini sangat strategis. Dengan pendekatan holistik yang memadukan tradisi salaf dan kebutuhan kontemporer, insya Allah akan melahirkan ulama dan cendekiawan yang siap menghadapi tantangan zaman.",
+      name: "Prof. Dr. KH. Didin Hafidhuddin, M.Sc.",
+      role: "Guru Besar IPB & Ketua MUI",
+      organization: "Majelis Ulama Indonesia",
+      location: "Bogor",
+      avatar: "https://i.pravatar.cc/150?u=kiai2",
+      color: "from-blue-600 to-cyan-600",
+      pattern: "floral"
     },
     {
-      quote: "Selain ilmu agama, kami juga dibekali ilmu umum yang mumpuni. Saya merasa siap bersaing di jenjang pendidikan selanjutnya dan diterima di PTN favorit.",
-      name: "Muhammad Rizki",
-      role: "Alumni MA",
-      location: "Pemalang, Yogyakarta",
-      rating: 5,
-      year: "2021",
-      avatar: "https://i.pravatar.cc/150?u=a042581f4e29026706d",
-      category: "alumni",
-      color: "from-purple-500 to-violet-500"
-    },
-    {
-      quote: "Program pembinaan karakter di sini luar biasa. Anak saya tidak hanya pintar secara akademik, tapi juga memiliki akhlak yang mulia dan sopan santun yang baik.",
-      name: "Siti Khadijah",
-      role: "Orang Tua Santriwati",
-      location: "Pekalongan, Yogyakarta",
-      rating: 5,
-      year: "2023",
-      avatar: "https://i.pravatar.cc/150?u=a04258a2462d826712d",
-      category: "parent",
-      color: "from-pink-500 to-rose-500"
-    },
-    {
-      quote: "Fasilitas asrama yang nyaman dan kegiatan yang terstruktur membuat saya betah tinggal di pesantren. Seperti keluarga besar yang saling mendukung.",
-      name: "Abdullah Al-Faqih",
-      role: "Santri Aktif MTs",
-      location: "Batang, Yogyakarta",
-      rating: 5,
-      year: "2024",
-      avatar: "https://i.pravatar.cc/150?u=a04258b2462d826712d",
-      category: "student",
-      color: "from-amber-500 to-orange-500"
-    },
-    {
-      quote: "Metode pembelajaran kitab kuning yang diterapkan sangat efektif. Saya sekarang bisa membaca dan memahami kitab-kitab klasik dengan baik.",
-      name: "Aisyah Maryam",
-      role: "Alumni MA",
-      location: "Kendal, Yogyakarta",
-      rating: 5,
-      year: "2020",
-      avatar: "https://i.pravatar.cc/150?u=a04258c2462d826712d",
-      category: "alumni",
-      color: "from-teal-500 to-cyan-500"
-    },
+      quote: "Melihat visi dan misi pondok pesantren ini yang mengutamakan pembentukan karakter Islami dan keunggulan akademik, saya yakin ini akan menjadi lembaga pendidikan yang berkualitas. Semoga Allah meridhoi dan memberkahi langkah mulia ini.",
+      name: "Dr. KH. Abdullah Syukri Zarkasyi, M.A.",
+      role: "Direktur Pondok Modern Gontor",
+      organization: "Pondok Modern Darussalam Gontor",
+      location: "Ponorogo",
+      avatar: "https://i.pravatar.cc/150?u=kiai3",
+      color: "from-amber-600 to-orange-600",
+      pattern: "arabesque"
+    }
   ];
-
-  const getCategoryIcon = (category: string) => {
-    switch (category) {
-      case 'parent':
-        return <Heart className="w-4 h-4" />;
-      case 'alumni':
-        return <GraduationCap className="w-4 h-4" />;
-      case 'student':
-        return <Users className="w-4 h-4" />;
-      default:
-        return <Star className="w-4 h-4" />;
-    }
-  };
-
-  const getCategoryLabel = (category: string) => {
-    switch (category) {
-      case 'parent':
-        return 'Orang Tua';
-      case 'alumni':
-        return 'Alumni';
-      case 'student':
-        return 'Santri Aktif';
-      default:
-        return 'Testimoni';
-    }
-  };
 
   return (
     <section 
-      id="testimoni" 
+      id="dukungan-tokoh" 
       className="py-20 relative overflow-hidden"
       style={{
-        background: 'linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 25%, #cbd5e1 50%, #e2e8f0 75%, #f1f5f9 100%)'
+        background: 'linear-gradient(135deg, #f8fafc 0%, #f1f5f9 25%, #e2e8f0 50%, #f1f5f9 75%, #f8fafc 100%)'
       }}
     >
       {/* Islamic Pattern Background */}
-      <div className="absolute inset-0 opacity-8">
+      <div className="absolute inset-0 opacity-5">
         <svg width="100%" height="100%" viewBox="0 0 800 800" className="w-full h-full">
           <defs>
-            <pattern id="testimoni-islamic-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-              <g fill="#0f766e" opacity="0.1">
-                <circle cx="50" cy="50" r="3"/>
-                <path d="M50 25 L70 40 L50 55 L30 40 Z" fill="none" stroke="#0f766e" strokeWidth="0.8"/>
-                <path d="M25 50 L40 70 L55 50 L40 30 Z" fill="none" stroke="#0f766e" strokeWidth="0.8"/>
-                <circle cx="50" cy="50" r="20" fill="none" stroke="#0f766e" strokeWidth="0.5"/>
-                <circle cx="50" cy="50" r="35" fill="none" stroke="#0f766e" strokeWidth="0.3"/>
+            <pattern id="dukungan-islamic-pattern" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
+              <g fill="#0f766e" opacity="0.6">
+                <circle cx="60" cy="60" r="2"/>
+                <path d="M60 30 L80 50 L60 70 L40 50 Z" fill="none" stroke="#0f766e" strokeWidth="1"/>
+                <path d="M30 60 L50 80 L70 60 L50 40 Z" fill="none" stroke="#0f766e" strokeWidth="1"/>
+                <circle cx="60" cy="60" r="25" fill="none" stroke="#0f766e" strokeWidth="0.8"/>
+                <circle cx="60" cy="60" r="40" fill="none" stroke="#0f766e" strokeWidth="0.5"/>
+                <path d="M60 20 L70 30 L60 40 L50 30 Z" fill="none" stroke="#0f766e" strokeWidth="0.6"/>
+                <path d="M60 80 L70 90 L60 100 L50 90 Z" fill="none" stroke="#0f766e" strokeWidth="0.6"/>
               </g>
             </pattern>
           </defs>
-          <rect width="100%" height="100%" fill="url(#testimoni-islamic-pattern)"/>
+          <rect width="100%" height="100%" fill="url(#dukungan-islamic-pattern)"/>
         </svg>
       </div>
 
       {/* Floating Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 right-20 w-80 h-80 bg-gradient-to-bl from-blue-200/30 to-cyan-200/20 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-20 left-20 w-96 h-96 bg-gradient-to-tr from-emerald-200/30 to-green-200/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
+        <div className="absolute top-20 right-20 w-80 h-80 bg-gradient-to-bl from-emerald-200/20 to-green-200/15 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-20 left-20 w-96 h-96 bg-gradient-to-tr from-blue-200/20 to-cyan-200/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
         
-        {/* Floating Quote Icons */}
+        {/* Floating Icons */}
         <div className="absolute top-1/4 left-1/6 animate-bounce" style={{ animationDelay: '1s', animationDuration: '4s' }}>
-          <Quote className="w-8 h-8 text-blue-300/40" />
+          <Quote className="w-8 h-8 text-emerald-300/50" />
         </div>
         <div className="absolute bottom-1/3 right-1/4 animate-bounce" style={{ animationDelay: '2.5s', animationDuration: '5s' }}>
-          <Star className="w-6 h-6 text-amber-400/40 fill-current" />
+          <BookOpen className="w-7 h-7 text-blue-400/50" />
         </div>
         <div className="absolute top-1/2 right-1/6 animate-bounce" style={{ animationDelay: '1.8s', animationDuration: '4.5s' }}>
-          <Sparkles className="w-7 h-7 text-emerald-400/40" />
+          <Sparkles className="w-6 h-6 text-amber-400/50" />
         </div>
       </div>
       
@@ -145,202 +86,191 @@ export default function Testimoni() {
           {/* Islamic Greeting */}
           <div className="mb-6">
             <p className="text-2xl text-amber-600 font-bold mb-2">
-              جَزَاكُمُ اللَّهُ خَيْرًا
+              بَارَكَ اللَّهُ فِيكُمْ
             </p>
             <p className="text-emerald-700 text-sm italic font-medium">
-              "Semoga Allah membalas kalian dengan kebaikan"
+              &quot;Semoga Allah memberkahi kalian&quot;
             </p>
           </div>
 
-          <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm text-slate-700 px-6 py-3 rounded-full text-sm font-medium mb-8 border border-slate-200 shadow-lg">
-            <Quote className="w-4 h-4" />
-            <span className="font-semibold">Testimoni Terpercaya</span>
+          <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm text-slate-700 px-6 py-3 rounded-full text-sm font-medium mb-8 border border-slate-200 shadow-lg">
+            <Award className="w-4 h-4" />
+            <span className="font-semibold">Dukungan Ulama & Tokoh</span>
             <Sparkles className="w-4 h-4 text-emerald-500" />
           </div>
 
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-800">
-            Apa Kata 
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600 ml-3">
-              Mereka?
+            Dukungan 
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-blue-600 ml-3">
+              Tokoh Besar
             </span>
           </h2>
 
           {/* Decorative Line */}
           <div className="flex items-center justify-center gap-4 mb-6">
-            <div className="w-24 h-1 bg-gradient-to-r from-transparent via-blue-500 to-emerald-500 rounded-full" />
+            <div className="w-24 h-1 bg-gradient-to-r from-transparent via-emerald-500 to-blue-500 rounded-full" />
             <div className="flex items-center gap-2">
               <Star className="w-6 h-6 text-amber-500 fill-current" />
-              <Quote className="w-6 h-6 text-blue-600" />
+              <Quote className="w-6 h-6 text-emerald-600" />
               <Star className="w-6 h-6 text-amber-500 fill-current" />
             </div>
-            <div className="w-24 h-1 bg-gradient-to-l from-transparent via-blue-500 to-emerald-500 rounded-full" />
+            <div className="w-24 h-1 bg-gradient-to-l from-transparent via-emerald-500 to-blue-500 rounded-full" />
           </div>
 
           <p className="text-slate-600 text-lg max-w-4xl mx-auto leading-relaxed mb-6">
-            Testimoni dari para orang tua, alumni, dan santri aktif yang telah merasakan langsung 
-            kualitas pendidikan dan pembinaan karakter di pesantren kami.
+            Para ulama dan tokoh besar memberikan dukungan penuh terhadap berdirinya pondok pesantren ini 
+            sebagai upaya mencerdaskan ummah dan membangun generasi Qur&#39;ani.
           </p>
 
           {/* Islamic Quote */}
-          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 max-w-3xl mx-auto border border-slate-200 shadow-lg">
+          <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 max-w-3xl mx-auto border border-slate-200 shadow-lg">
             <p className="text-emerald-700 italic text-lg font-medium mb-2">
-              "وَمَن يَشْكُرْ فَإِنَّمَا يَشْكُرُ لِنَفْسِهِ"
+              &quot;وَمَنْ سَنَّ فِي الْإِسْلَامِ سُنَّةً حَسَنَةً فَلَهُ أَجْرُهَا وَأَجْرُ مَنْ عَمِلَ بِهَا&quot;
             </p>
             <p className="text-amber-700 text-sm font-medium">
-              "Dan barangsiapa bersyukur, maka sesungguhnya dia bersyukur untuk dirinya sendiri" - QS. Luqman: 12
+              &quot;Barangsiapa memulai kebaikan dalam Islam, maka baginya pahala dan pahala orang yang mengikutinya&quot; - HR. Muslim
             </p>
           </div>
         </div>
 
-        {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
+        {/* Support Cards */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+          {dukungan.map((item, index) => (
             <div 
               key={index} 
-              className="group relative bg-white/90 backdrop-blur-sm p-8 rounded-3xl border border-slate-200 hover:bg-white hover:border-slate-300 transition-all duration-500 hover:-translate-y-3 hover:shadow-xl"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="group relative bg-white/95 backdrop-blur-sm p-8 rounded-3xl border border-slate-200 hover:bg-white hover:border-slate-300 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
+              style={{ animationDelay: `${index * 0.2}s` }}
             >
-              {/* Islamic Pattern Background for Card */}
+              {/* Background Pattern */}
               <div className="absolute inset-0 opacity-3">
-                <svg className="w-full h-full" viewBox="0 0 200 300">
+                <svg className="w-full h-full" viewBox="0 0 300 400">
                   <defs>
-                    <pattern id={`card-pattern-testimoni-${index}`} x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
-                      <circle cx="30" cy="30" r="20" fill="none" stroke="#0f766e" strokeWidth="0.5"/>
-                      <circle cx="30" cy="30" r="12" fill="none" stroke="#0f766e" strokeWidth="0.5"/>
-                      <path d="M30 10 L40 20 L30 30 L20 20 Z" fill="none" stroke="#0f766e" strokeWidth="0.5"/>
-                      <circle cx="30" cy="30" r="4" fill="#0f766e"/>
+                    <pattern id={`support-pattern-${index}`} x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+                      {item.pattern === 'geometric' && (
+                        <>
+                          <circle cx="40" cy="40" r="25" fill="none" stroke="#0f766e" strokeWidth="0.8"/>
+                          <path d="M40 15 L55 30 L40 45 L25 30 Z" fill="none" stroke="#0f766e" strokeWidth="0.6"/>
+                          <circle cx="40" cy="40" r="6" fill="#0f766e" opacity="0.3"/>
+                        </>
+                      )}
+                      {item.pattern === 'floral' && (
+                        <>
+                          <path d="M40 20 C50 30, 50 50, 40 60 C30 50, 30 30, 40 20" fill="none" stroke="#0f766e" strokeWidth="0.7"/>
+                          <path d="M20 40 C30 30, 50 30, 60 40 C50 50, 30 50, 20 40" fill="none" stroke="#0f766e" strokeWidth="0.7"/>
+                          <circle cx="40" cy="40" r="4" fill="#0f766e" opacity="0.4"/>
+                        </>
+                      )}
+                      {item.pattern === 'arabesque' && (
+                        <>
+                          <path d="M40 10 Q60 30 40 50 Q20 30 40 10" fill="none" stroke="#0f766e" strokeWidth="0.8"/>
+                          <path d="M10 40 Q30 20 50 40 Q30 60 10 40" fill="none" stroke="#0f766e" strokeWidth="0.8"/>
+                          <circle cx="40" cy="40" r="3" fill="#0f766e" opacity="0.5"/>
+                        </>
+                      )}
                     </pattern>
                   </defs>
-                  <rect width="200" height="300" fill={`url(#card-pattern-testimoni-${index})`}/>
+                  <rect width="300" height="400" fill={`url(#support-pattern-${index})`}/>
                 </svg>
               </div>
 
               {/* Background Gradient */}
-              <div className={`absolute inset-0 rounded-3xl bg-gradient-to-br ${testimonial.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`} />
+              <div className={`absolute inset-0 rounded-3xl bg-gradient-to-br ${item.color} opacity-0 group-hover:opacity-8 transition-opacity duration-500`} />
               
               {/* Content */}
               <div className="relative z-10">
-                {/* Header */}
-                <div className="flex items-start justify-between mb-6">
-                  <div className={`inline-flex items-center gap-2 px-3 py-2 rounded-full text-xs font-medium bg-gradient-to-r ${testimonial.color} text-white shadow-lg`}>
-                    {getCategoryIcon(testimonial.category)}
-                    {getCategoryLabel(testimonial.category)}
-                  </div>
-                  <div className="flex items-center gap-1">
-                    {Array.from({ length: testimonial.rating }).map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-yellow-500 text-yellow-500" />
-                    ))}
+                {/* Header with Organization */}
+                <div className="mb-6">
+                  <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold bg-gradient-to-r ${item.color} text-white shadow-lg mb-3`}>
+                    <Award className="w-3 h-3" />
+                    {item.organization}
                   </div>
                 </div>
 
                 {/* Quote */}
-                <div className="relative mb-6">
-                  <Quote className="absolute -top-2 -left-2 w-8 h-8 text-blue-400/40" />
-                  <p className="text-slate-700 leading-relaxed italic pl-6 group-hover:text-slate-800 transition-colors duration-300">
-                    "{testimonial.quote}"
+                <div className="relative mb-8">
+                  <Quote className="absolute -top-3 -left-3 w-10 h-10 text-emerald-400/40" />
+                  <p className="text-slate-700 leading-relaxed italic pl-8 text-base group-hover:text-slate-800 transition-colors duration-300">
+                    &quot;{item.quote}&quot;
                   </p>
                 </div>
 
                 {/* Author Info */}
-                <div className="flex items-center gap-4">
-                  <div className="relative">
-                    <div className={`absolute inset-0 rounded-full bg-gradient-to-r ${testimonial.color} blur-md opacity-30 group-hover:opacity-50 transition-opacity duration-300`} />
-                    <img 
-                      src={testimonial.avatar} 
-                      alt={testimonial.name} 
-                      className="relative w-14 h-14 rounded-full border-3 border-white shadow-lg group-hover:scale-110 transition-transform duration-300" 
+                <div className="flex items-start gap-4">
+                  <div className="relative flex-shrink-0">
+                    <div className={`absolute inset-0 rounded-full bg-gradient-to-r ${item.color} blur-lg opacity-30 group-hover:opacity-60 transition-opacity duration-300`} />
+                    <Image 
+                      src={item.avatar} 
+                      alt={item.name} 
+                      width={64} // 16 x 4 (Tailwind w-16 = 4rem = 64px)
+                      height={64}
+                      className="rounded-full border-3 border-white shadow-xl group-hover:scale-110 transition-transform duration-300" 
                     />
-                  </div>
-                  <div className="flex-1">
-                    <h4 className="font-bold text-slate-800 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-emerald-600 transition-all duration-300">
-                      {testimonial.name}
-                    </h4>
-                    <p className="text-sm text-slate-600 group-hover:text-slate-700 transition-colors duration-300 font-medium">
-                      {testimonial.role}
-                    </p>
-                    <div className="flex items-center gap-3 mt-1">
-                      <span className="text-xs text-slate-500 group-hover:text-slate-600 transition-colors duration-300">
-                        {testimonial.location}
-                      </span>
-                      <div className="flex items-center gap-1 text-xs text-slate-500 group-hover:text-slate-600 transition-colors duration-300">
-                        <Calendar className="w-3 h-3" />
-                        {testimonial.year}
-                      </div>
+                    {/* Islamic decoration on avatar */}
+                    <div className={`absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-gradient-to-r ${item.color} flex items-center justify-center shadow-lg`}>
+                      <Star className="w-3 h-3 text-white fill-current" />
                     </div>
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h4 className="font-bold text-slate-800 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-emerald-600 group-hover:to-blue-600 transition-all duration-300 text-lg leading-tight">
+                      {item.name}
+                    </h4>
+                    <p className="text-sm text-slate-600 group-hover:text-slate-700 transition-colors duration-300 font-medium mb-1">
+                      {item.role}
+                    </p>
+                    <p className="text-xs text-slate-500 group-hover:text-slate-600 transition-colors duration-300 flex items-center gap-1">
+                      <Users className="w-3 h-3" />
+                      {item.location}
+                    </p>
                   </div>
                 </div>
 
                 {/* Decorative Elements */}
-                <div className="absolute top-4 right-4 w-12 h-12 bg-gradient-to-br from-slate-100/70 to-slate-200/50 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:rotate-12" />
-                <div className="absolute bottom-4 left-4 w-6 h-6 bg-gradient-to-br from-slate-200/50 to-slate-100/70 rounded-full opacity-0 group-hover:opacity-70 transition-all duration-500 transform group-hover:rotate-45" />
+                <div className="absolute top-4 right-4 w-12 h-12 bg-gradient-to-br from-slate-100/50 to-slate-200/30 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:rotate-12" />
                 
                 {/* Sparkle Effect */}
-                <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <Sparkles className="w-4 h-4 text-amber-500" />
+                <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <Sparkles className="w-5 h-5 text-amber-500" />
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Stats Section */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-4 gap-6">
-          {[
-            { icon: Users, label: "Total Testimoni", value: "500+", color: "from-blue-500 to-cyan-500" },
-            { icon: Star, label: "Rating Rata-rata", value: "4.9/5", color: "from-amber-500 to-yellow-500" },
-            { icon: GraduationCap, label: "Alumni Puas", value: "98%", color: "from-emerald-500 to-green-500" },
-            { icon: Award, label: "Kepercayaan Orang Tua", value: "100%", color: "from-purple-500 to-violet-500" }
-          ].map((stat, index) => (
-            <div key={index} className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 border border-slate-200 text-center group hover:bg-white hover:shadow-lg transition-all duration-300">
-              <div className={`inline-flex p-3 rounded-full bg-gradient-to-r ${stat.color} mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
-                <stat.icon className="w-6 h-6 text-white" />
-              </div>
-              <h4 className="text-2xl font-bold text-slate-800 mb-1">{stat.value}</h4>
-              <p className="text-sm text-slate-600 font-medium">{stat.label}</p>
-            </div>
-          ))}
+        {/* Foundation Info */}
+        <div className="bg-gradient-to-br from-white/95 to-slate-50/95 backdrop-blur-sm rounded-3xl p-8 border border-slate-200 shadow-xl">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl font-bold text-slate-800 mb-4 flex items-center justify-center gap-3">
+              <BookOpen className="w-7 h-7 text-emerald-600" />
+              Visi Bersama Membangun Generasi Qur&#39;ani
+            </h3>
+            <p className="text-slate-600 max-w-4xl mx-auto leading-relaxed">
+              Dengan dukungan penuh dari para ulama dan tokoh besar, pondok pesantren ini hadir sebagai upaya 
+              kolektif membangun lembaga pendidikan Islam yang berkualitas, menggabungkan kearifan tradisional 
+              dengan kebutuhan zaman modern untuk melahirkan generasi yang beriman, berilmu, dan berakhlak mulia.
+            </p>
+          </div>
+
+          {/* Islamic Quote for Foundation */}
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 border border-slate-200 shadow-lg">
+            <p className="text-emerald-700 italic font-medium text-center mb-2">
+              &quot;خَيْرُ النَّاسِ أَنْفَعُهُمْ لِلنَّاسِ&quot;
+            </p>
+            <p className="text-amber-700 text-sm font-medium text-center">
+              &quot;Sebaik-baik manusia adalah yang paling bermanfaat bagi manusia lainnya&quot; - HR. Ahmad
+            </p>
+          </div>
         </div>
 
-        {/* CTA Section */}
-        <div className="text-center mt-16">
-          {/* Islamic Quote */}
-          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 max-w-3xl mx-auto mb-8 border border-slate-200 shadow-lg">
-            <p className="text-emerald-700 italic font-medium mb-2">
-              "إِنَّ اللَّهَ يُحِبُّ إِذَا عَمِلَ أَحَدُكُمْ عَمَلًا أَنْ يُتْقِنَهُ"
-            </p>
-            <p className="text-amber-700 text-sm font-medium">
-              "Sesungguhnya Allah menyukai apabila salah seorang dari kalian bekerja, dia mengerjakannya dengan itqan (sempurna)" - HR. Thabrani
-            </p>
-          </div>
-
-          <div className="inline-flex flex-col sm:flex-row items-center gap-6 bg-white/90 backdrop-blur-sm rounded-3xl p-8 border border-slate-200 shadow-lg hover:shadow-xl transition-all duration-300">
-            <div className="text-left">
-              <h4 className="text-xl font-bold text-slate-800 mb-2 flex items-center gap-2">
-                Ingin Berbagi Pengalaman?
-                <Sparkles className="w-5 h-5 text-emerald-500" />
-              </h4>
-              <p className="text-slate-600 font-medium">Ceritakan pengalaman Anda bersama kami dan bantu calon santri lainnya</p>
+        {/* Bottom Decorative Border */}
+        <div className="mt-12 flex justify-center">
+          <div className="flex items-center gap-6">
+            <div className="w-32 h-1 bg-gradient-to-r from-transparent via-emerald-500 to-blue-500 rounded-full" />
+            <div className="flex items-center gap-3">
+              <div className="w-4 h-4 bg-emerald-500 rounded-full animate-pulse" />
+              <Quote className="w-8 h-8 text-blue-600" />
+              <div className="w-4 h-4 bg-blue-500 rounded-full animate-pulse" />
             </div>
-            <button className="bg-gradient-to-r from-blue-600 to-emerald-600 text-white px-8 py-4 rounded-2xl font-bold hover:shadow-xl transform hover:scale-105 transition-all duration-300 whitespace-nowrap flex items-center gap-2 group">
-              <span>Kirim Testimoni</span>
-              <div className="flex items-center gap-1 group-hover:translate-x-1 transition-transform duration-300">
-                <Star className="w-4 h-4 fill-current" />
-                <Sparkles className="w-4 h-4" />
-              </div>
-            </button>
-          </div>
-
-          {/* Bottom Decorative Border */}
-          <div className="mt-12 flex justify-center">
-            <div className="flex items-center gap-6">
-              <div className="w-32 h-1 bg-gradient-to-r from-transparent via-blue-500 to-emerald-500 rounded-full" />
-              <div className="flex items-center gap-3">
-                <div className="w-4 h-4 bg-blue-500 rounded-full animate-pulse" />
-                <Quote className="w-8 h-8 text-emerald-600" />
-                <div className="w-4 h-4 bg-emerald-500 rounded-full animate-pulse" />
-              </div>
-              <div className="w-32 h-1 bg-gradient-to-l from-transparent via-blue-500 to-emerald-500 rounded-full" />
-            </div>
+            <div className="w-32 h-1 bg-gradient-to-l from-transparent via-emerald-500 to-blue-500 rounded-full" />
           </div>
         </div>
       </div>

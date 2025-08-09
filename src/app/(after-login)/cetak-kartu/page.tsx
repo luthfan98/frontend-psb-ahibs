@@ -1,6 +1,7 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 import {
   Printer,
   ArrowLeft,
@@ -55,7 +56,7 @@ const KartuPesertaModern = ({ data }: { data: KartuPesertaData }) => {
             <div className="w-32 h-40 mx-auto bg-gray-100 border-2 border-dashed rounded-lg flex items-center justify-center text-gray-400 text-sm">
               Pas Foto 3x4
             </div>
-            <img src={qrCodeUrl} alt="QR Code Peserta" className="w-24 h-24 mx-auto mt-4" />
+            <Image src={qrCodeUrl} alt="QR Code Peserta" className="w-24 h-24 mx-auto mt-4" unoptimized/>
             <p className="text-xs text-gray-500 mt-1">Scan untuk verifikasi</p>
           </div>
 
