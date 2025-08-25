@@ -149,7 +149,7 @@ export default function PembayaranPage() {
                                 <p className="text-sm text-gray-500">Nomor Virtual Account</p>
                                 <div className="flex items-center gap-3 mt-1">
                                     <p className="text-2xl font-bold text-gray-900 tracking-wider">8808 1234 5678 9012</p>
-                                    <button onClick={() => handleCopyToClipboard('8808123456789012')} className="text-gray-500 hover:text-teal-600 p-2 rounded-md hover:bg-gray-200 transition-colors">
+                                    <button onClick={() => handleCopyToClipboard('8808123378516112')} className="text-gray-500 hover:text-teal-600 p-2 rounded-md hover:bg-gray-200 transition-colors">
                                         <Clipboard className="h-5 w-5" />
                                     </button>
                                 </div>

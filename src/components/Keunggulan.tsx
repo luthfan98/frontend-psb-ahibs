@@ -1,6 +1,6 @@
 'use client';
 
-import { BookOpen, Landmark, Users, Award, Heart, Target, Star, Sparkles } from 'lucide-react';
+import { BookOpen, Landmark, Users, Award, Heart, Target, Star, Sparkles, Globe } from 'lucide-react';
 import { type ElementType } from 'react';
 
 interface Feature {
@@ -16,52 +16,41 @@ const features: Feature[] = [
   {
     icon: BookOpen,
     title: "Kurikulum Terpadu",
-    description: "Mengintegrasikan kurikulum nasional dengan program diniyah dan tahfidz Al-Qur'an untuk pendidikan yang holistik dan seimbang.",
-    highlight: "Diniyah & Tahfidz",
-    arabicText: "وَعَلَّمَ الْإِنْسَانَ مَا لَمْ يَعْلَمْ",
-    quranRef: "QS. Al-Alaq: 5"
+    description:
+      "Mengintegrasikan kurikulum pesantren dengan kurikulum formal di bawah Kementerian Agama RI, sehingga santri memperoleh bekal ilmu agama dan umum secara seimbang."
   },
   {
-    icon: Landmark,
-    title: "Lingkungan Islami",
-    description: "Membentuk karakter santri yang berakhlakul karimah dalam lingkungan yang kondusif dan mendukung spiritualitas.",
-    highlight: "Akhlakul Karimah",
-    arabicText: "إِنَّمَا بُعِثْتُ لِأُتَمِّمَ مَكَارِمَ الْأَخْلَاقِ",
-    quranRef: "HR. Ahmad"
+    icon: Globe,
+    title: "Multilingual",
+    description:
+      "Menerapkan pembelajaran tiga bahasa utama: Bahasa Arab untuk memahami sumber Islam, Bahasa Inggris untuk komunikasi global, dan Bahasa Indonesia sebagai penguat identitas."
   },
   {
     icon: Users,
     title: "Pengajar Profesional",
-    description: "Dibimbing oleh para asatidz dan asatidzah yang kompeten, berpengalaman, dan berdedikasi tinggi dalam mendidik.",
-    highlight: "Asatidz Berpengalaman",
-    arabicText: "وَقُلْ رَبِّ زِدْنِي عِلْمًا",
-    quranRef: "QS. Taha: 114"
+    description:
+      "Dibimbing oleh asatidz dan asatidzah yang kompeten, berpengalaman, dan berdedikasi tinggi dalam mendidik serta membimbing perkembangan santri."
   },
   {
     icon: Award,
-    title: "Prestasi Terbukti",
-    description: "Track record yang konsisten dalam menghasilkan lulusan berprestasi, hafidz Al-Quran, dan berkarakter unggul.",
-    highlight: "Lulusan Hafidz",
-    arabicText: "وَمَنْ يُؤْتَ الْحِكْمَةَ فَقَدْ أُوتِيَ خَيْرًا كَثِيرًا",
-    quranRef: "QS. Al-Baqarah: 269"
+    title: "Keteladanan",
+    description:
+      "Menanamkan nilai-nilai akhlak mulia melalui keteladanan nyata dari para pengajar dan lingkungan pesantren, sehingga santri terbiasa berperilaku Islami."
   },
   {
     icon: Heart,
     title: "Pembinaan Karakter",
-    description: "Program pembinaan karakter yang komprehensif untuk mengembangkan kepribadian yang mulia dan bertakwa.",
-    highlight: "Tarbiyah Ruhiyyah",
-    arabicText: "وَتَزَوَّدُوا فَإِنَّ خَيْرَ الزَّادِ التَّقْوَىٰ",
-    quranRef: "QS. Al-Baqarah: 197"
+    description:
+      "Program tarbiyah yang berkesinambungan untuk membentuk pribadi santri yang beriman, bertakwa, berdisiplin, dan siap menjadi pemimpin umat."
   },
   {
-    icon: Target,
-    title: "Visi Jangka Panjang",
-    description: "Mempersiapkan generasi rabbani yang siap menghadapi tantangan masa depan dengan iman yang kuat dan ilmu yang bermanfaat.",
-    highlight: "Generasi Rabbani",
-    arabicText: "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً",
-    quranRef: "QS. Al-Baqarah: 201"
+    icon: Landmark,
+    title: "Lingkungan Islami",
+    description:
+      "Menciptakan suasana pesantren yang religius, kondusif, dan mendukung tumbuhnya spiritualitas, ukhuwah, serta kedisiplinan santri dalam kehidupan sehari-hari."
   }
 ];
+
 
 export default function Keunggulan() {
   return (
@@ -110,7 +99,7 @@ export default function Keunggulan() {
           {/* Islamic Greeting */}
           <div className="mb-6">
             <p className="text-2xl text-emerald-700 font-bold mb-2">
-              بِسْمِ ٱللَّٰهِ نَبْدَأُ
+              بِسْمِ اللهِ بَدَأْنَا
             </p>
             <p className="text-sm text-emerald-600 italic">
               &quot;Dengan nama Allah kami memulai&quot;
@@ -119,7 +108,7 @@ export default function Keunggulan() {
 
           <div className="inline-flex items-center gap-3 bg-gradient-to-r from-emerald-500/10 to-amber-500/10 backdrop-blur-sm text-emerald-700 px-6 py-3 rounded-full text-sm font-medium mb-6 border border-emerald-200/50 shadow-lg">
             <Award className="w-5 h-5" />
-            <span className="font-semibold">Keunggulan Pesantren Kami</span>
+            <span className="font-semibold">Keunggulan Pesantren AHIBS</span>
             <div className="flex items-center gap-1">
               <Star className="w-4 h-4 text-amber-500 fill-current" />
               <Sparkles className="w-4 h-4 text-emerald-500" />
@@ -129,7 +118,7 @@ export default function Keunggulan() {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800 leading-tight">
             Kenapa Memilih 
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 via-teal-600 to-emerald-700 ml-3 relative">
-              Pesantren Kami?
+              Pesantren AHIBS?
             </span>
           </h2>
           
@@ -145,8 +134,7 @@ export default function Keunggulan() {
           </div>
 
           <p className="text-slate-700 text-lg max-w-4xl mx-auto leading-relaxed">
-            Kami berkomitmen untuk memberikan pendidikan terbaik yang seimbang antara dunia dan akhirat, 
-            mempersiapkan generasi rabbani yang unggul dalam ilmu dan mulia dalam akhlak.
+            Dalam menjaga tradisi keilmuan Islam di Indonesia, pesantren merupakan tempat yang sentral dalam melahirkan generasi terbaik zaman ini. Ditambahkan dengan tantangan pergaulan bebas dan ketergantungan kepada gadget menjadi alasan mendasar akan perlunya Pendidikan pesantren. Pondok pesantren Al Hadharah Islamic Boarding School (AHIBS) Yogyakarta hadir sebagai Lembaga Pendidikan Pesantren yang berkomitmen Membangun generasi Rabbani, berakhlak mulia dan berwawasan global.
           </p>
 
           {/* Islamic Quote */}
@@ -203,25 +191,9 @@ export default function Keunggulan() {
                     </div>
                   </div>
 
-                  {/* Arabic Text */}
-                  {feature.arabicText && (
-                    <div className="text-center mb-4">
-                      <p className="text-emerald-700 text-lg font-bold mb-1">
-                        {feature.arabicText}
-                      </p>
-                      <p className="text-emerald-600 text-xs">
-                        {feature.quranRef}
-                      </p>
-                    </div>
-                  )}
-
+                 
                   {/* Main Content */}
-                  <div className="text-center">
-                    {feature.highlight && (
-                      <span className="inline-block bg-gradient-to-r from-emerald-100 to-amber-100 text-emerald-700 text-xs font-semibold px-4 py-2 rounded-full mb-4 border border-emerald-200/50">
-                        ✦ {feature.highlight}
-                      </span>
-                    )}
+                  <div className="text-center">                    
                     <h3 className="text-xl font-bold mb-4 text-gray-800 group-hover:text-emerald-700 transition-colors duration-300">
                       {feature.title}
                     </h3>
@@ -267,7 +239,7 @@ export default function Keunggulan() {
           {/* Call to Action */}
           <div className="inline-flex items-center gap-3 bg-gradient-to-r from-emerald-500/10 to-amber-500/10 backdrop-blur-sm border border-emerald-200/50 px-8 py-4 rounded-full text-emerald-700 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
             <Heart className="w-5 h-5 text-emerald-600 fill-current" />
-            <span className="font-medium">Bergabunglah dengan Keluarga Besar Pesantren Kami</span>
+            <span className="font-medium">Bergabunglah dengan Keluarga Besar Pesantren AHIBS</span>
             <div className="flex items-center gap-1">
               <Star className="w-4 h-4 text-amber-500 fill-current" />
               <Sparkles className="w-4 h-4 text-emerald-500" />

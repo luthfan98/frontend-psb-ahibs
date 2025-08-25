@@ -1,7 +1,7 @@
 'use client';
 
 import { type ElementType } from 'react';
-import { GraduationCap, BookOpen, Users, Heart, Star, Calendar, MapPin, Clock, Sparkles, Landmark, Sunrise, Gift } from 'lucide-react';
+import { GraduationCap, BookOpen, Users, Heart, Star, Calendar, MapPin, Clock, Sparkles, Landmark, Sunrise, Gift, CheckCircle } from 'lucide-react';
 
 interface Program {
   title: string;
@@ -25,8 +25,8 @@ export default function Program() {
       icon: GraduationCap,
       level: "SMP Setara",
       duration: "3 Tahun",
-      capacity: "50 Santri",
-      highlight: "Generasi Pertama",
+      capacity: "30 Santri",
+      highlight: "Angkatan Pertama",
       color: "from-emerald-500 via-teal-500 to-emerald-600",
       arabicText: "طَلَبُ الْعِلْمِ فَرِيضَةٌ عَلَى كُلِّ مُسْلِمٍ",
       quranRef: "HR. Ibnu Majah",
@@ -38,13 +38,24 @@ export default function Program() {
       icon: Heart,
       level: "SMP Setara", 
       duration: "3 Tahun",
-      capacity: "50 Santriwati",
-      highlight: "Generasi Pertama",
+      capacity: "30 Santriwati",
+      highlight: "Angkatan Pertama",
       color: "from-pink-500 via-rose-500 to-pink-600",
-      arabicText: "الْجَنَّةُ تَحْتَ أَقْدَامِ الْأُمَّهَاتِ",
-      quranRef: "HR. An-Nasai",
+      arabicText: "خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ",
+      quranRef: "HR. Bukhari",
       features: ["Tarbiyah Islami", "Keterampilan Putri", "Tahfidz", "Adab & Akhlaq"]
     }
+
+  ];
+
+  const programUnggulan = [
+    "Belajar langsung di Mekkah dan Madinah",
+    "Kerjasama Internasional", 
+    "Pembelajaran Multilingual (Bahasa Arab, Bahasa Inggris, Bahasa Indonesia)",
+    "Hafal Al Qur'an Minimal 11 Juz",
+    "Praktek Dakwah",
+    "Qiroatul Kutub",
+    "Living Values Education (Pendidikan Nilai)"
   ];
 
   return (
@@ -93,16 +104,6 @@ export default function Program() {
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
-          {/* Islamic Greeting */}
-          <div className="mb-6">
-            <p className="text-3xl text-amber-600 font-bold mb-2">
-              بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
-            </p>
-            <p className="text-emerald-700 text-sm italic font-medium">
-              &quot;Dengan menyebut nama Allah Yang Maha Pengasih lagi Maha Penyayang&quot;
-            </p>
-          </div>
-
           {/* New Badge */}
           <div className="inline-flex items-center gap-3 bg-gradient-to-r from-amber-100 to-emerald-100 text-emerald-700 px-6 py-3 rounded-full text-sm font-medium mb-8 border border-emerald-200 shadow-lg">
             <Sunrise className="w-5 h-5 text-amber-600" />
@@ -114,14 +115,14 @@ export default function Program() {
           </div>
 
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-800">
-            Memulai Perjalanan
+            Program Unggulan
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 via-emerald-600 to-teal-600 ml-3 block md:inline">
-              Pendidikan Islam
+              AHIBS
             </span>
           </h2>
           
           {/* Decorative Line */}
-          <div className="flex items-center justify-center gap-4 mb-6">
+          <div className="flex items-center justify-center gap-4 mb-8">
             <div className="w-24 h-1 bg-gradient-to-r from-transparent via-amber-500 to-emerald-500 rounded-full" />
             <div className="flex items-center gap-2">
               <Sunrise className="w-6 h-6 text-amber-500 fill-current" />
@@ -131,10 +132,49 @@ export default function Program() {
             <div className="w-24 h-1 bg-gradient-to-l from-transparent via-amber-500 to-emerald-500 rounded-full" />
           </div>
 
-          <p className="text-slate-600 text-lg max-w-4xl mx-auto leading-relaxed mb-6">
-            Sebuah awal yang baru dalam dunia pendidikan Islam. Bergabunglah dengan generasi pertama santri yang akan 
-            membangun tradisi keilmuan dan spiritual yang berkualitas tinggi dengan manhaj yang lurus dan modern.
-          </p>
+          {/* Enhanced Program Unggulan Section */}
+          <div className="bg-gradient-to-br from-emerald-800 via-emerald-700 to-teal-800 p-8 rounded-2xl shadow-2xl mb-12 max-w-5xl mx-auto">
+            {/* Decorative Header */}
+            <div className="flex items-center justify-center gap-4 mb-8">
+              <div className="w-20 h-0.5 bg-gradient-to-r from-transparent via-amber-400/60 to-emerald-400/60 rounded-full" />
+              <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
+                <Sunrise className="w-6 h-6 text-amber-400 drop-shadow-lg" />
+                <Landmark className="w-7 h-7 text-emerald-300 drop-shadow-lg" />
+                <Star className="w-6 h-6 text-amber-400 drop-shadow-lg" />
+              </div>
+              <div className="w-20 h-0.5 bg-gradient-to-l from-transparent via-amber-400/60 to-emerald-400/60 rounded-full" />
+            </div>
+
+            {/* Title */}
+            <div className="text-center mb-10">
+              <h3 className="text-3xl lg:text-4xl font-bold text-white mb-2 drop-shadow-lg">
+                Keunggulan Program
+              </h3>
+              <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-emerald-400 mx-auto rounded-full" />
+            </div>
+
+            {/* Program List */}
+            <div className="grid gap-4 max-w-4xl mx-auto">
+              {programUnggulan.map((program, index) => (
+                <div 
+                  key={index}
+                  className="group flex items-start gap-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5 hover:bg-white/10 hover:border-amber-400/30 transition-all duration-300 hover:shadow-lg hover:scale-[1.02]"
+                >
+                  <div className="flex-shrink-0 mt-0.5">
+                    <CheckCircle className="w-6 h-6 text-amber-400 group-hover:text-amber-300 transition-colors duration-300 drop-shadow-sm" />
+                  </div>
+                  <span className="text-emerald-50 font-medium leading-relaxed group-hover:text-white transition-colors duration-300">
+                    {program}
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            {/* Bottom Accent */}
+            <div className="flex justify-center mt-8">
+              <div className="w-32 h-0.5 bg-gradient-to-r from-amber-400/40 via-emerald-400/60 to-amber-400/40 rounded-full" />
+            </div>
+          </div>
 
           {/* Special Launch Message */}
           <div className="bg-gradient-to-r from-amber-50 to-emerald-50 rounded-2xl p-6 max-w-4xl mx-auto border border-amber-200 shadow-lg mb-6">
@@ -149,16 +189,6 @@ export default function Program() {
             <p className="text-slate-700">
               Menjadi santri generasi pertama adalah kehormatan istimewa. Anda akan menjadi bagian dari sejarah 
               pembentukan pesantren dan mendapatkan perhatian khusus dalam setiap tahap pembelajaran.
-            </p>
-          </div>
-
-          {/* Islamic Quote */}
-          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 max-w-3xl mx-auto border border-emerald-200 shadow-lg">
-            <p className="text-emerald-700 italic text-lg font-medium mb-2">
-              &quot;وَمَنْ سَنَّ فِي الْإِسْلَامِ سُنَّةً حَسَنَةً فَلَهُ أَجْرُهَا وَأَجْرُ مَنْ عَمِلَ بِهَا&quot;
-            </p>
-            <p className="text-amber-700 text-sm font-medium">
-              &quot;Barangsiapa yang memulai kebiasaan baik dalam Islam, baginya pahala dan pahala orang yang mengikutinya&quot; - HR. Muslim
             </p>
           </div>
         </div>
@@ -238,19 +268,7 @@ export default function Program() {
                     {program.description}
                   </p>
 
-                  {/* Features */}
-                  <div className="mb-6">
-                    <h4 className="text-sm font-bold text-emerald-700 mb-3">Program Unggulan:</h4>
-                    <div className="grid grid-cols-2 gap-3">
-                      {program.features.map((feature, idx) => (
-                        <div key={idx} className="flex items-center gap-2 text-sm">
-                          <div className={`w-3 h-3 rounded-full bg-gradient-to-r ${program.color} shadow-sm`} />
-                          <span className="text-slate-700 font-medium">{feature}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
+                  
                   {/* Program Details */}
                   <div className="space-y-4 mb-6">
                     <div className="flex items-center gap-4 text-sm">
@@ -282,24 +300,10 @@ export default function Program() {
                     </div>
                   </div>
 
-                  {/* Special Benefits for First Generation */}
-                  <div className="bg-gradient-to-r from-amber-50 to-emerald-50 rounded-xl p-4 mb-6 border border-amber-200">
-                    <div className="flex items-center gap-2 mb-2">
-                      <Gift className="w-5 h-5 text-amber-600" />
-                      <h4 className="text-sm font-bold text-emerald-700">Keistimewaan Generasi Pertama:</h4>
-                    </div>
-                    <ul className="text-xs text-slate-700 space-y-1">
-                      <li>• Bimbingan intensif dari pendiri</li>
-                      <li>• Fasilitas dan perhatian eksklusif</li>
-                      <li>• Menjadi bagian sejarah pesantren</li>
-                      <li>• Program khusus character building</li>
-                    </ul>
-                  </div>
-
                   {/* CTA */}
                   <div className="pt-4 border-t border-slate-200">
                     <button className={`w-full py-4 px-6 rounded-xl bg-gradient-to-r ${program.color} text-white font-bold text-sm hover:shadow-lg hover:shadow-emerald-500/20 transform hover:scale-105 transition-all duration-300 opacity-90 hover:opacity-100 flex items-center justify-center gap-2`}>
-                      <span>Daftar Sebagai Perintis</span>
+                      <span>Daftar Sebagai Generasi Pertama</span>
                       <Sunrise className="w-5 h-5" />
                     </button>
                   </div>
@@ -348,24 +352,24 @@ export default function Program() {
                       Pendaftaran Santri Baru Dibuka!
                       <Gift className="w-5 h-5 text-amber-500" />
                     </h4>
-                    <p className="text-emerald-700 font-medium">Tahun Ajaran 1446 H / 2025-2026 M</p>
+                    <p className="text-emerald-700 font-medium">Tahun Ajaran 2026-2027</p>
                   </div>
                 </div>
                 
                 <div className="space-y-2 mb-4">
-                  <p className="text-slate-700 font-medium">✨ <strong>Kuota Terbatas:</strong> Hanya 100 santri untuk generasi pertama</p>
+                  <p className="text-slate-700 font-medium">✨ <strong>Kuota Terbatas:</strong> Hanya 60 santri untuk generasi pertama</p>
                   <p className="text-slate-700 font-medium">🎯 <strong>Seleksi Khusus:</strong> Program intensif untuk calon santri unggulan</p>
-                  <p className="text-slate-700 font-medium">🏆 <strong>Beasiswa:</strong> Tersedia untuk santri berprestasi</p>
+                  <p className="text-slate-700 font-medium">🏆 <strong>Beasiswa:</strong> Tersedia untuk santri berprestasi dan Yatim Dhuafa</p>
                 </div>
 
                 <div className="flex items-center gap-4 text-sm text-slate-600">
                   <div className="flex items-center gap-2">
                     <Clock className="w-4 h-4" />
-                    <span>Pendaftaran: Januari - Maret 2025</span>
+                    <span>Pendaftaran: 1 September - 29 November 2025 (Gelombang 1)</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Users className="w-4 h-4" />
-                    <span>Kuota: 100 Santri</span>
+                    <span>Kuota: 60 Santri</span>
                   </div>
                 </div>
               </div>

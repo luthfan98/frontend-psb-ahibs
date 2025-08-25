@@ -75,7 +75,7 @@ export default function AlurPendaftaran() {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
             Alur 
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600 ml-3">
-              Pendaftaran
+              Pendaftaran (Gel 1)
             </span>
           </h2>
           <p className="text-slate-600 text-lg max-w-3xl mx-auto leading-relaxed">
@@ -170,7 +170,7 @@ export default function AlurPendaftaran() {
               <Clock className="w-6 h-6 text-blue-600" />
             </div>
             <h4 className="font-bold text-gray-800 mb-2">Pendaftaran Dibuka</h4>
-            <p className="text-sm text-slate-600">1 Januari - 31 Maret 2025</p>
+            <p className="text-sm text-slate-600">1 September - 29 November 2025</p>
           </div>
           
           <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 text-center">
@@ -186,7 +186,7 @@ export default function AlurPendaftaran() {
               <Users className="w-6 h-6 text-amber-600" />
             </div>
             <h4 className="font-bold text-gray-800 mb-2">Bantuan Pendaftaran</h4>
-            <p className="text-sm text-slate-600">WhatsApp: 0812-3456-7890</p>
+            <p className="text-sm text-slate-600">WhatsApp: 0812-3378-5161</p>
           </div>
         </div>
 

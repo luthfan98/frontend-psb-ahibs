@@ -1,38 +1,28 @@
-import { Quote, Star, Sparkles, Award, Users, BookOpen } from 'lucide-react';
+import { Quote, Star, Sparkles, Award, Users, BookOpen, Target } from 'lucide-react';
 import Image from 'next/image';
 
 export default function DukunganTokoh() {
   const dukungan = [
     {
-      quote: "Alhamdulillah, dengan berdirinya pondok pesantren ini, umat Islam di daerah ini memiliki wahana pendidikan yang menggabungkan kekuatan spiritual dan intelektual. Semoga menjadi mercusuar ilmu dan akhlak mulia bagi generasi mendatang.",
-      name: "Prof. Dr. KH. Ahmad Thohir Luth, M.A.",
-      role: "Rais Aam PBNU",
-      organization: "Nahdlatul Ulama",
+      quote: "Semoga Al Hadharah Islamic Boarding School menjadi salahsatu pilar dakwah, pilar Pendidikan di Indonesia. Saya mengajak Muslimin dan muslimat di manapun Anda berada, Yogyakarta memang kota pensiunan, tapi di Sleman juga lahir generasi-generasi Qur’an yang hebat. Saya ikut merekomendasikan pesantren ini. Semoga menjadi tujuan belajar anak-anak kita semua. ",
+      name: "KH. Bachtiar Nasir, Lc., M.M. ",
+      role: "",
+      organization: "Pimpinan AQL, Ketua JATTI",
       location: "Jakarta",
-      avatar: "https://i.pravatar.cc/150?u=kiai1",
+      avatar: "/assets/img/testimoni/Bachtiarnasir.jpg",
       color: "from-emerald-600 to-green-600",
       pattern: "geometric"
     },
     {
-      quote: "Pembangunan pondok pesantren di era modern ini sangat strategis. Dengan pendekatan holistik yang memadukan tradisi salaf dan kebutuhan kontemporer, insya Allah akan melahirkan ulama dan cendekiawan yang siap menghadapi tantangan zaman.",
-      name: "Prof. Dr. KH. Didin Hafidhuddin, M.Sc.",
-      role: "Guru Besar IPB & Ketua MUI",
-      organization: "Majelis Ulama Indonesia",
-      location: "Bogor",
-      avatar: "https://i.pravatar.cc/150?u=kiai2",
-      color: "from-blue-600 to-cyan-600",
-      pattern: "floral"
-    },
-    {
-      quote: "Melihat visi dan misi pondok pesantren ini yang mengutamakan pembentukan karakter Islami dan keunggulan akademik, saya yakin ini akan menjadi lembaga pendidikan yang berkualitas. Semoga Allah meridhoi dan memberkahi langkah mulia ini.",
-      name: "Dr. KH. Abdullah Syukri Zarkasyi, M.A.",
-      role: "Direktur Pondok Modern Gontor",
-      organization: "Pondok Modern Darussalam Gontor",
-      location: "Ponorogo",
-      avatar: "https://i.pravatar.cc/150?u=kiai3",
-      color: "from-amber-600 to-orange-600",
-      pattern: "arabesque"
-    }
+      quote: "Pembukaan pesantren Al Hadharah di Yogyakarta adalah langkah awal membangun generasi yang sadar akan ilmu syar'i dengan semangat yang murni, yang menggabungkan antara tradisi ke-Islaman dan modernitas. Semoga langkah ini diberkahi, dan saya mengajak para santri untuk berusaha dan bersungguh-sungguh dalam menuntut ilmu, karena itu adalah kunci kekuatan dan kebangkitan, serta jalan untuk melayani agama, tanah air, dan masyarakat. Saya memohon kepada Allah agar pesantren ini menjadi mercusuar ilmu, serta semoga Allah memberkahi para pengajarnya dan siswa-siswi, serta memberikan manfaat bagi umat seluruhnya.",
+      name: "Syekh Naser Ali Edrees",
+      role: "",
+      organization: "Dosen Universitas Benghazi, Libya",
+      location: "Libya",
+      avatar: "/assets/img/testimoni/syeikh_naseer.jpg",
+      color: "from-emerald-600 to-green-600",
+      pattern: "geometric"
+    }   
   ];
 
   return (
@@ -83,16 +73,7 @@ export default function DukunganTokoh() {
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         {/* Header Section */}
         <div className="text-center mb-16">
-          {/* Islamic Greeting */}
-          <div className="mb-6">
-            <p className="text-2xl text-amber-600 font-bold mb-2">
-              بَارَكَ اللَّهُ فِيكُمْ
-            </p>
-            <p className="text-emerald-700 text-sm italic font-medium">
-              &quot;Semoga Allah memberkahi kalian&quot;
-            </p>
-          </div>
-
+          
           <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm text-slate-700 px-6 py-3 rounded-full text-sm font-medium mb-8 border border-slate-200 shadow-lg">
             <Award className="w-4 h-4" />
             <span className="font-semibold">Dukungan Ulama & Tokoh</span>
@@ -121,20 +102,10 @@ export default function DukunganTokoh() {
             Para ulama dan tokoh besar memberikan dukungan penuh terhadap berdirinya pondok pesantren ini 
             sebagai upaya mencerdaskan ummah dan membangun generasi Qur&#39;ani.
           </p>
-
-          {/* Islamic Quote */}
-          <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 max-w-3xl mx-auto border border-slate-200 shadow-lg">
-            <p className="text-emerald-700 italic text-lg font-medium mb-2">
-              &quot;وَمَنْ سَنَّ فِي الْإِسْلَامِ سُنَّةً حَسَنَةً فَلَهُ أَجْرُهَا وَأَجْرُ مَنْ عَمِلَ بِهَا&quot;
-            </p>
-            <p className="text-amber-700 text-sm font-medium">
-              &quot;Barangsiapa memulai kebaikan dalam Islam, maka baginya pahala dan pahala orang yang mengikutinya&quot; - HR. Muslim
-            </p>
-          </div>
         </div>
 
         {/* Support Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-2 lg:grid-cols-2 gap-8 mb-16">
           {dukungan.map((item, index) => (
             <div 
               key={index} 
@@ -238,16 +209,70 @@ export default function DukunganTokoh() {
 
         {/* Foundation Info */}
         <div className="bg-gradient-to-br from-white/95 to-slate-50/95 backdrop-blur-sm rounded-3xl p-8 border border-slate-200 shadow-xl">
-          <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold text-slate-800 mb-4 flex items-center justify-center gap-3">
+          {/* Visi Section */}
+          <div className="text-center mb-10">
+            <h3 className="text-2xl font-bold text-slate-800 mb-6 flex items-center justify-center gap-3">
               <BookOpen className="w-7 h-7 text-emerald-600" />
-              Visi Bersama Membangun Generasi Qur&#39;ani
+              Visi Pondok Pesantren
             </h3>
-            <p className="text-slate-600 max-w-4xl mx-auto leading-relaxed">
-              Dengan dukungan penuh dari para ulama dan tokoh besar, pondok pesantren ini hadir sebagai upaya 
-              kolektif membangun lembaga pendidikan Islam yang berkualitas, menggabungkan kearifan tradisional 
-              dengan kebutuhan zaman modern untuk melahirkan generasi yang beriman, berilmu, dan berakhlak mulia.
-            </p>
+            <div className="bg-emerald-50/80 backdrop-blur-sm rounded-2xl p-6 border border-emerald-200 shadow-lg">
+              <p className="text-emerald-800 font-semibold text-lg leading-relaxed">
+                Membangun generasi Rabbani, berakhlak mulia dan berwawasan global
+              </p>
+            </div>
+          </div>
+
+          {/* Misi Section */}
+          <div className="mb-8">
+            <h3 className="text-2xl font-bold text-slate-800 mb-6 text-center flex items-center justify-center gap-3">
+              <Target className="w-7 h-7 text-amber-600" />
+              Misi Pondok Pesantren
+            </h3>
+            <div className="space-y-4">
+              <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 border border-slate-200 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div className="flex items-start gap-4">
+                  <div className="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-emerald-700 font-bold text-sm">1</span>
+                  </div>
+                  <p className="text-slate-700 leading-relaxed">
+                    Menyelenggarakan Pendidikan Pesantren Integral yang Memadukan Kurikulum Pendidikan Pesantren dan Kurikulum Pendidikan Nasional
+                  </p>
+                </div>
+              </div>
+              
+              <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 border border-slate-200 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div className="flex items-start gap-4">
+                  <div className="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-emerald-700 font-bold text-sm">2</span>
+                  </div>
+                  <p className="text-slate-700 leading-relaxed">
+                    Menanamkan Nilai-nilai Ajaran Islam Berdasarkan Al Qur&#39;an dan As-Sunnah kepada seluruh civitas akademika
+                  </p>
+                </div>
+              </div>
+              
+              <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 border border-slate-200 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div className="flex items-start gap-4">
+                  <div className="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-emerald-700 font-bold text-sm">3</span>
+                  </div>
+                  <p className="text-slate-700 leading-relaxed">
+                    Mewujudkan Pendidikan yang Menghasilkan Kader-kader Ummat yang Siap Melaksanakan Dakwah Amar Ma&#39;ruf Nahi Munkar
+                  </p>
+                </div>
+              </div>
+              
+              <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 border border-slate-200 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div className="flex items-start gap-4">
+                  <div className="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-emerald-700 font-bold text-sm">4</span>
+                  </div>
+                  <p className="text-slate-700 leading-relaxed">
+                    Menyiapkan Calon Pemimpin beradab yang mampu menjawab tantangan dan perkembangan zaman
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Islamic Quote for Foundation */}

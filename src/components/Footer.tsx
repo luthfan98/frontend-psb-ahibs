@@ -77,7 +77,7 @@ export default function Footer() {
                   <MapPin className="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0 group-hover:scale-110 transition-transform duration-200" />
                   <div>
                     <p className="text-sm font-medium text-white">Alamat Lengkap</p>
-                    <p className="text-sm text-gray-300">Jl. ...... , Sleman, Yogyakarta 52194</p>
+                    <p className="text-sm text-gray-300">Jl. Tempel-Turi, Ngentak, Bangunkerto, Turi, Sleman Yogyakarta</p>
                   </div>
                 </div>
                 
@@ -86,7 +86,7 @@ export default function Footer() {
                   <div>
                     <p className="text-sm font-medium text-white">Email</p>
                     <a href="mailto:info@pesantren-ahibs.id" className="text-sm text-gray-300 hover:text-emerald-400 transition-colors">
-                      info@pesantren-ahibs.id
+                      alhadharah.ibs@gmail.com
                     </a>
                   </div>
                 </div>
@@ -96,24 +96,12 @@ export default function Footer() {
                   <div>
                     <p className="text-sm font-medium text-white">Telepon</p>
                     <a href="tel:+622831234567" className="text-sm text-gray-300 hover:text-emerald-400 transition-colors">
-                      (0283) 123-4567
+                      (0812-3378-5161)
                     </a>
                   </div>
                 </div>
               </div>
 
-              {/* Program Highlights */}
-              <div className="mt-6">
-                <h4 className="font-semibold text-white mb-3">Program Unggulan</h4>
-                <div className="grid grid-cols-2 gap-2">
-                  {programs.map((program) => (
-                    <div key={program} className="flex items-center gap-2 text-sm text-gray-300">
-                      <div className="w-1.5 h-1.5 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-full" />
-                      {program}
-                    </div>
-                  ))}
-                </div>
-              </div>
             </div>
 
             {/* Quick Links */}
@@ -167,29 +155,14 @@ export default function Footer() {
                 </div>
               </div>
 
-              {/* Newsletter Signup */}
-              <div className="bg-gradient-to-br from-emerald-500/10 to-teal-500/10 p-4 rounded-lg border border-emerald-500/20">
-                <h5 className="font-medium text-white mb-2">Newsletter</h5>
-                <p className="text-xs text-gray-400 mb-3">Dapatkan informasi terbaru dari pesantren</p>
-                <div className="flex gap-2">
-                  <input
-                    type="email"
-                    placeholder="Email Anda"
-                    className="flex-1 px-3 py-2 text-xs bg-slate-800 border border-slate-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:border-emerald-500 transition-colors"
-                  />
-                  <button className="px-4 py-2 bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-xs font-medium rounded-md hover:from-emerald-600 hover:to-teal-600 transition-all duration-200 hover:scale-105">
-                    Kirim
-                  </button>
-                </div>
-              </div>
 
               {/* Operating Hours */}
               <div className="text-sm">
                 <h5 className="font-medium text-white mb-2">Jam Operasional</h5>
                 <div className="space-y-1 text-gray-400">
-                  <p>Senin - Jumat: 07:00 - 16:00</p>
-                  <p>Sabtu: 08:00 - 14:00</p>
-                  <p>Minggu: Tutup</p>
+                  <p>Senin - Jumat: 07:00 - 15:00</p>
+                  <p>Sabtu: 07:00 - 12:00</p>
+                  <p>Ahad: Tutup</p>
                 </div>
               </div>
             </div>

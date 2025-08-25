@@ -119,7 +119,7 @@ function CetakPernyataanContent() {
   const mockData: SuratData = {
     parentName: 'Budi Santoso',
     parentAddress: 'Jl. Merdeka No. 45, Sleman, Sleman, Yogyakarta',
-    parentPhone: '081234567890',
+    parentPhone: '081233785161',
     studentName: 'Ahmad Zaki',
     studentDob: 'Sleman, 15 Juli 2009',
     studentGender: 'Putra',

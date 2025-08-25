@@ -5,7 +5,7 @@ import { ArrowRight, Play, Star, BookOpen, Calendar, MapPin, Sparkles, Heart, Bu
 
 export default function Hero() {
   const highlights = [
-    { icon: Building2, text: "Pesantren Baru 2025", color: "text-emerald-600" },
+    { icon: Building2, text: "Program Bahasa Multilingual", color: "text-emerald-600" },
     { icon: BookOpen, text: "Program Tahfizh Intensif", color: "text-teal-600" },
     { icon: Zap, text: "Generasi Pertama", color: "text-amber-600" },
   ];
@@ -13,8 +13,8 @@ export default function Hero() {
   const features = [
     " ✅ Kurikulum Modern & Islami",
     " ✅ Fasilitas Baru & Lengkap", 
-    " ✅ Pembinaan Personal 24 Jam",
-    " ✅ Menjadi Pelopor & Teladan"
+    " ✅ Penerapan Nilai-Nilai Islam",
+    " ✅ Digitalisasi Pesantren"
   ];
 
   return (
@@ -75,7 +75,7 @@ export default function Hero() {
               {/* Islamic Greeting */}
               <div className="text-center lg:text-left">
                 <p className="text-2xl md:text-3xl text-amber-200 font-bold mb-2 arabic-font">
-                  بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
+                  بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيْمِ
                 </p>
                 <p className="text-sm text-emerald-200 italic">
                   &quot;Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang&quot;
@@ -85,7 +85,7 @@ export default function Hero() {
               {/* Badge with Islamic Touch - Updated for new pesantren */}
               <div className="inline-flex items-center gap-3 bg-gradient-to-r from-emerald-500/20 to-teal-500/20 backdrop-blur-sm text-emerald-100 px-6 py-3 rounded-full text-sm font-medium border border-emerald-400/30 shadow-lg">
                 <Calendar className="w-5 h-5" />
-                <span className="font-semibold">Pesantren Baru - Penerimaan Perdana 2025/2026</span>
+                <span className="font-semibold">Pesantren Baru - Penerimaan Perdana 2026/2027</span>
                 <div className="flex items-center gap-1">
                   <div className="w-2 h-2 bg-amber-400 rounded-full animate-pulse" />
                   <Sparkles className="w-4 h-4 text-amber-400" />
@@ -97,9 +97,9 @@ export default function Hero() {
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                   <span className="text-white">Jadilah Bagian</span>
                   <span className="block bg-gradient-to-r from-amber-300 via-emerald-300 to-teal-300 bg-clip-text text-transparent">
-                    Generasi Pertama
+                    Santri SHOLIH
                   </span>
-                  <span className="text-emerald-100">Pesantren Kami!</span>
+                  <span className="text-emerald-100 text-4xl leading-tight">(Smart, Hardworking, Optimistic, Leadership, Inspire, Humble)</span>
                 </h1>
                 
                 {/* Islamic Decorative Line */}
@@ -121,28 +121,6 @@ export default function Hero() {
                   <span className="font-semibold text-amber-200"> santri generasi pertama</span> yang akan 
                   menjadi fondasi dan teladan bagi generasi selanjutnya.
                 </p>
-                
-                {/* Special Message for First Generation */}
-                <div className="bg-gradient-to-r from-amber-400/20 to-emerald-400/20 backdrop-blur-sm rounded-xl p-4 border border-amber-400/30">
-                  <div className="flex items-center gap-3 mb-2">
-                    <Zap className="w-5 h-5 text-amber-400" />
-                    <span className="text-amber-200 font-semibold">Keistimewaan Generasi Pertama</span>
-                  </div>
-                  <p className="text-emerald-200 text-sm">
-                    Kesempatan langka menjadi pioneer, membentuk tradisi, dan meninggalkan jejak bersejarah 
-                    sebagai santri pendiri yang akan dikenang sepanjang masa.
-                  </p>
-                </div>
-                
-                {/* Islamic Quote */}
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-emerald-400/20">
-                  <p className="text-emerald-200 italic text-center font-medium">
-                    &quot;وَأَنِ اعْبُدُونِي هَٰذَا صِرَاطٌ مُّسْتَقِيمٌ&quot;
-                  </p>
-                  <p className="text-amber-200 text-sm text-center mt-2">
-                    &quot;Dan sembahlah Aku. Inilah jalan yang lurus&quot; - QS. Yasin: 61
-                  </p>
-                </div>
               </div>
 
               {/* Features with Islamic Style - Updated */}
@@ -194,17 +172,25 @@ export default function Hero() {
 
                 <button className="group flex items-center gap-3 text-emerald-200 hover:text-white font-semibold py-4 px-6 rounded-full border-2 border-emerald-300/30 hover:border-emerald-300 hover:bg-emerald-600/20 backdrop-blur-sm transition-all duration-300">
                   <Play className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" fill="currentColor" />
-                  Tonton Visi Pesantren
+                  Tonton Profil Pesantren
                 </button>
               </div>
 
               {/* Location Info with Islamic Style */}
               <div className="flex items-center justify-center lg:justify-start gap-3 text-emerald-200 pt-4">
-                <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
-                  <MapPin className="w-4 h-4" />
-                  <span className="text-sm font-medium">Sleman, Sleman, Yogyakarta</span>
-                </div>
-              </div>
+  <a
+    href="https://www.google.com/maps/place/Jl.+Tempel-Turi,+Ngentak,+Bangunkerto,+Turi,+Sleman,+Yogyakarta"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 
+               cursor-pointer transition hover:bg-white/20"
+  >
+    <MapPin className="w-4 h-4 text-emerald-300" />
+    <span className="text-sm font-medium">Jl. Tempel-Turi, Ngentak, Bangunkerto, Turi, Sleman Yogyakarta</span>
+  </a>
+</div>
+
+
             </div>
 
             {/* Right Content - Enhanced Hero Image with Background Image */}
@@ -216,7 +202,7 @@ export default function Hero() {
                   {/* Background Image */}
                   <div className="absolute inset-0">
                     <img 
-                      src="/assets/img/card_home.png"
+                      src="/assets/img/card_home2.png"
                       alt="Pesantren Islamic Architecture"
                       className="w-full h-full object-cover"
                     />
@@ -227,29 +213,22 @@ export default function Hero() {
                   
                   
                   {/* Content with Islamic Elements - Updated with better contrast */}
-                  <div className="aspect-[4/5] flex flex-col items-center justify-center relative p-8 z-10">
-                    {/* Top Islamic Calligraphy - Updated */}
-                    <div className="text-center mb-6">
-                      <p className="text-3xl text-amber-300 font-bold mb-2 drop-shadow-lg">
-                        بَرَكَاتُهُ
-                      </p>
-                      <p className="text-emerald-200 text-sm italic drop-shadow">
-                        &quot;Keberkahan-Nya&quot; - Memulai dengan Barakah
+                  <div className="aspect-[4/5] flex flex-col items-center justify-end relative p-8 z-10">
+                    {/* Overlay hanya bagian bawah */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/0 to-transparent rounded-lg"></div>
+
+                    {/* Konten */}
+                    <div className="relative z-10 text-center">
+                      <h3 className="text-2xl font-bold text-white mb-2 drop-shadow-lg">
+                        Generasi Perintis
+                      </h3>
+                      <p className="text-emerald-100 font-medium max-w-xs mx-auto drop-shadow">
+                        Menjadi Pionir Peradaban Islam yang Mulia dan Modern
                       </p>
                     </div>
-                    
-                    
-                    
-                    {/* Title - Updated with better contrast */}
-                    <h3 className="text-2xl font-bold text-white mb-2 text-center drop-shadow-lg">
-                      Generasi Perintis
-                    </h3>
-                    <p className="text-emerald-200 font-medium text-center max-w-xs drop-shadow">
-                      Menjadi Pendiri Tradisi Keislaman yang Mulia & Berkesan Sepanjang Masa
-                    </p>
 
                     {/* Bottom Decoration */}
-                    <div className="mt-6 flex items-center gap-2">
+                    <div className="relative z-10 mt-6 flex items-center gap-2">
                       <div className="w-2 h-2 bg-amber-400 rounded-full animate-pulse drop-shadow" />
                       <div className="w-8 h-0.5 bg-emerald-300 drop-shadow"></div>
                       <Star className="w-5 h-5 text-amber-400 fill-current drop-shadow" />
@@ -257,6 +236,8 @@ export default function Hero() {
                       <div className="w-2 h-2 bg-amber-400 rounded-full animate-pulse drop-shadow" />
                     </div>
                   </div>
+
+
 
                   {/* Enhanced Floating Achievement Cards - Updated for new pesantren */}
                   <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-xl border border-amber-200/50">

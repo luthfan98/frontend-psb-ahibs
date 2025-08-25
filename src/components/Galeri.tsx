@@ -228,26 +228,6 @@ export default function Galeri() {
             ))}
           </div>
 
-          {/* Stats */}
-          <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => {
-              const Icon = stat.icon;
-              return (
-                <div key={index} className="text-center group">
-                  <div className="bg-white rounded-2xl p-6 shadow-lg border border-slate-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                    <div className="inline-flex p-3 rounded-full bg-gradient-to-r from-blue-500 to-emerald-500 mb-4 group-hover:scale-110 transition-transform duration-300">
-                      <Icon className="w-6 h-6 text-white" />
-                    </div>
-                    <div className="text-2xl md:text-3xl font-bold text-slate-800 mb-1 group-hover:text-blue-600 transition-colors duration-300">
-                      {stat.number}
-                    </div>
-                    <div className="text-sm text-slate-600 font-medium">{stat.label}</div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-
           {/* CTA Section */}
           <div className="text-center mt-16">
             <div className="inline-flex flex-col sm:flex-row items-center gap-6 bg-white rounded-2xl p-8 shadow-lg border border-gray-100">

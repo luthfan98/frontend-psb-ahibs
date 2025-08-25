@@ -131,7 +131,7 @@ export default function DashboardPage() {
                              <p className="text-sm text-gray-600 bg-yellow-50 p-3 rounded-lg">Jadwal ujian seleksi akan dilaksanakan pada tanggal <span className="font-bold">10 Januari 2026</span>. Harap mempersiapkan diri.</p>
                              <hr className="my-4"/>
                              <h3 className="font-bold text-lg text-gray-800 mb-2 flex items-center gap-2"><HelpCircle />Butuh Bantuan?</h3>
-                             <p className="text-sm text-gray-600">Hubungi panitia PSB di nomor <span className="font-semibold text-teal-700">0812-3456-7890</span>.</p>
+                             <p className="text-sm text-gray-600">Hubungi panitia PSB di nomor <span className="font-semibold text-teal-700">0812-3378-5161</span>.</p>
                         </div>
                     </div>
 

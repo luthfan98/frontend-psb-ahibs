@@ -178,13 +178,13 @@ export default function Faq() {
                     <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
                       📞
                     </div>
-                    <span>+62 123 456 7890</span>
+                    <span>+62 812 3378 5161</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm">
                     <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
                       ✉️
                     </div>
-                    <span>info@pesantren.id</span>
+                    <span>alhadharah.ibs@gmail.com</span>
                   </div>
                 </div>
               </div>
