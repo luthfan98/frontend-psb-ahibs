@@ -6,10 +6,10 @@ import { HeartHandshake, Info, Save } from 'lucide-react';
 
 // Pilihan nominal infaq yang sudah ditentukan
 const OPSI_INFAQ = [
-    { value: '100000', label: 'Rp 100.000' },
-    { value: '250000', label: 'Rp 250.000' },
     { value: '500000', label: 'Rp 500.000' },
     { value: '1000000', label: 'Rp 1.000.000' },
+    { value: '1500000', label: 'Rp 1.500.000' },
+    { value: '2000000', label: 'Rp 2.000.000' },
     { value: '2500000', label: 'Rp 2.500.000' },
 ];
 
