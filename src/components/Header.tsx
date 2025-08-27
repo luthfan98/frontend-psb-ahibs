@@ -45,7 +45,7 @@ export default function Header() {
               alt="Logo AHIBS"
               width={40}
               height={40}
-              className="group-hover:scale-110 transition-transform duration-300"
+              className="group-hover:scale-110 transition-transform duration-300 cursor-pointer"
               unoptimized
             />
             <div className="font-bold tracking-wide animate-shimmer bg-gradient-to-r from-green-300 via-emerald-400 to-teal-500 bg-[length:200%_auto] bg-clip-text text-transparent">

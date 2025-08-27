@@ -158,8 +158,8 @@ export default function Hero() {
               {/* CTA Buttons with Islamic Style - Updated */}
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-6">
                 <Link 
-                  href="/daftar" 
-                  className="group relative overflow-hidden bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:from-amber-600 hover:via-amber-500 hover:to-amber-600 text-emerald-900 font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 shadow-2xl hover:shadow-amber-500/25 transform hover:-translate-y-2 hover:scale-105 min-w-[260px]"
+                  href="https://psb.ahibs.id/" 
+                  className="group relative overflow-hidden bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:from-amber-600 hover:via-amber-500 hover:to-amber-600 text-emerald-900 font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 shadow-2xl hover:shadow-amber-500/25 transform hover:-translate-y-2 hover:scale-105 min-w-[260px] cursor-pointer"
                 >
                   <span className="relative z-10 flex items-center justify-center gap-3">
                     <Zap className="w-5 h-5" />

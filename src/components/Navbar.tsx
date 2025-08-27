@@ -37,7 +37,7 @@ export default function Navbar() {
             {/* Logo */}
             <Link 
               href="/" 
-              className="flex flex-shrink-0 items-center gap-3 group" 
+              className="flex flex-shrink-0 items-center gap-3 group cursor-pointer" 
               onClick={() => setIsOpen(false)}
             >
               <div className="relative">
@@ -68,7 +68,7 @@ export default function Navbar() {
                 <Link 
                   key={item.name} 
                   href={item.href} 
-                  className="relative px-4 py-2 text-sm font-medium text-gray-700 hover:text-emerald-600 rounded-lg transition-all duration-200 hover:bg-emerald-50 group"
+                  className="relative px-4 py-2 text-sm font-medium text-gray-700 hover:text-emerald-600 rounded-lg transition-all duration-200 hover:bg-emerald-50 group cursor-pointer"
                 >
                   <span className="relative z-10">{item.name}</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 to-teal-500/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
@@ -79,14 +79,14 @@ export default function Navbar() {
             {/* Desktop CTA Buttons */}
             <div className="hidden md:flex items-center gap-3 flex-shrink-0">
               <Link 
-                href="/login" 
-                className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-emerald-600 rounded-lg transition-all duration-200 hover:bg-gray-50"
+                href="https://psb.ahibs.id/login" 
+                className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-emerald-600 rounded-lg transition-all duration-200 hover:bg-gray-50 cursor-pointer"
               >
                 Login
               </Link>
               <Link 
-                href="/daftar" 
-                className="relative overflow-hidden bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 hover:from-emerald-600 hover:via-green-600 hover:to-teal-600 text-white font-semibold py-2.5 px-6 rounded-full transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 group"
+                href="https://psb.ahibs.id/" 
+                className="relative overflow-hidden bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 hover:from-emerald-600 hover:via-green-600 hover:to-teal-600 text-white font-semibold py-2.5 px-6 rounded-full transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 group cursor-pointer "
               >
                 <span className="relative z-10">Daftar Sekarang</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -128,7 +128,7 @@ export default function Navbar() {
                   <Link 
                     key={item.name} 
                     href={item.href} 
-                    className="flex items-center gap-3 py-3 px-4 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 group"
+                    className="flex items-center gap-3 py-3 px-4 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 group cursor-pointer"
                     onClick={() => setIsOpen(false)}
                   >
                     <IconComponent className="w-5 h-5 text-gray-400 group-hover:text-emerald-500 transition-colors duration-200" />
@@ -140,15 +140,15 @@ export default function Navbar() {
               {/* Mobile CTA Section */}
               <div className="border-t border-gray-200 mt-4 pt-4 flex flex-col gap-3">
                 <Link 
-                  href="/login" 
-                  className="text-center w-full py-3 px-4 rounded-lg text-gray-700 hover:text-emerald-600 hover:bg-gray-50 font-medium transition-all duration-200" 
+                  href="https://psb.ahibs.id/login" 
+                  className="text-center w-full py-3 px-4 rounded-lg text-gray-700 hover:text-emerald-600 hover:bg-gray-50 font-medium transition-all duration-200 cursor-pointer" 
                   onClick={() => setIsOpen(false)}
                 >
                   Login
                 </Link>
                 <Link 
-                  href="/daftar" 
-                  className="relative overflow-hidden text-center w-full bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 hover:from-emerald-600 hover:via-green-600 hover:to-teal-600 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 shadow-md group" 
+                  href="https://psb.ahibs.id/" 
+                  className="relative overflow-hidden text-center w-full bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 hover:from-emerald-600 hover:via-green-600 hover:to-teal-600 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 shadow-md group cursor-pointer" 
                   onClick={() => setIsOpen(false)}
                 >
                   <span className="relative z-10">Daftar Sekarang</span>

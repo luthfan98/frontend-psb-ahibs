@@ -1,4 +1,5 @@
 import { PencilLine, Wallet, FileText, Printer, CheckCircle, Smartphone, ArrowRight, Clock, Users, MapPin } from 'lucide-react';
+import Link from 'next/link';
 
 export default function AlurPendaftaran() {
   const steps = [
@@ -192,9 +193,11 @@ export default function AlurPendaftaran() {
 
         {/* CTA Section */}
         <div className="text-center mt-12">
-          <button className="bg-gradient-to-r from-blue-600 to-emerald-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-            Mulai Pendaftaran Sekarang
-          </button>
+          <Link href="https://psb.ahibs.id/">
+            <button className="bg-gradient-to-r from-blue-600 to-emerald-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300 w-full cursor-pointer">
+              Mulai Pendaftaran Sekarang
+            </button>
+          </Link>
           <p className="text-sm text-slate-500 mt-3">
             Proses pendaftaran hanya membutuhkan waktu ± 40 menit
           </p>

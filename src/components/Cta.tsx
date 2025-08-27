@@ -75,8 +75,8 @@ export default function Cta() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
               {/* Primary CTA */}
               <Link 
-                href="/daftar" 
-                className="group relative overflow-hidden bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 hover:from-emerald-400 hover:via-green-400 hover:to-teal-400 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 shadow-2xl hover:shadow-emerald-500/25 transform hover:-translate-y-2 hover:scale-105 min-w-[280px]"
+                href="https://psb.ahibs.id/" 
+                className="group relative overflow-hidden bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 hover:from-emerald-400 hover:via-green-400 hover:to-teal-400 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 shadow-2xl hover:shadow-emerald-500/25 transform hover:-translate-y-2 hover:scale-105 min-w-[280px] cursor-pointer"
               >
                 <span className="relative z-10 flex items-center gap-3">
                   Daftar Sekarang Juga
@@ -90,10 +90,10 @@ export default function Cta() {
 
               {/* Secondary CTA */}
               <Link 
-                href="/info" 
-                className="group flex items-center gap-3 text-emerald-300 hover:text-white font-semibold py-4 px-6 rounded-full border-2 border-emerald-400/50 hover:border-emerald-400 transition-all duration-300 hover:bg-emerald-400/10 min-w-[200px] justify-center"
+                href="/assets/doc/brosur.jpg" 
+                className="group flex items-center gap-3 text-emerald-300 hover:text-white font-semibold py-4 px-6 rounded-full border-2 border-emerald-400/50 hover:border-emerald-400 transition-all duration-300 hover:bg-emerald-400/10 min-w-[200px] justify-center cursor-pointer"
               >
-                Pelajari Lebih Lanjut
+                Download Brosur
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
               </Link>
             </div>

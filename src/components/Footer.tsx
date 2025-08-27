@@ -117,7 +117,7 @@ export default function Footer() {
                     <li key={link.name}>
                       <Link 
                         href={link.href} 
-                        className="flex items-center gap-3 text-sm text-gray-300 hover:text-emerald-400 transition-all duration-200 group hover:translate-x-1"
+                        className="flex items-center gap-3 text-sm text-gray-300 hover:text-emerald-400 transition-all duration-200 group hover:translate-x-1 cursor-pointer"
                       >
                         <IconComponent className="w-4 h-4 text-gray-500 group-hover:text-emerald-400 transition-colors duration-200" />
                         {link.name}
@@ -177,9 +177,9 @@ export default function Footer() {
                 &copy; {new Date().getFullYear()} Pesantren Modern Al-Hadharah Islamic Boarding School. Semua Hak Cipta Dilindungi.
               </p>
               <div className="flex items-center gap-6 text-xs text-gray-500">
-                <Link href="/privacy" className="hover:text-emerald-400 transition-colors">Kebijakan Privasi</Link>
-                <Link href="/terms" className="hover:text-emerald-400 transition-colors">Syarat & Ketentuan</Link>
-                <Link href="/sitemap" className="hover:text-emerald-400 transition-colors">Sitemap</Link>
+                <Link href="/privacy" className="hover:text-emerald-400 transition-colors cursor-pointer">Kebijakan Privasi</Link>
+                <Link href="/terms" className="hover:text-emerald-400 transition-colors cursor-pointer">Syarat & Ketentuan</Link>
+                <Link href="/sitemap" className="hover:text-emerald-400 transition-colors cursor-pointer">Sitemap</Link>
               </div>
             </div>
           </div>
