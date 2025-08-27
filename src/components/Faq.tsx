@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { ChevronDown, MessageCircleQuestion, CheckCircle, Users, BookOpen } from 'lucide-react';
+import Link from 'next/link';
 
 const faqData = [
   {
@@ -228,9 +229,11 @@ export default function Faq() {
           <p className="text-slate-600 mb-6 max-w-2xl mx-auto">
             Bergabunglah dengan ribuan keluarga yang telah mempercayakan pendidikan spiritual anak-anak mereka kepada kami.
           </p>
-          <button className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-3 rounded-xl font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-            Daftar Sekarang
-          </button>
+          <Link href="https://psb.ahibs.id/">
+            <button className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-3 rounded-xl font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 w-full cursor-pointer">
+              Daftar Sekarang
+            </button>
+          </Link>
         </div>
       </div>
     </section>

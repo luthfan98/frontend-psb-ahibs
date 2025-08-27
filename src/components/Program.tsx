@@ -2,6 +2,7 @@
 
 import { type ElementType } from 'react';
 import { GraduationCap, BookOpen, Users, Heart, Star, Calendar, MapPin, Clock, Sparkles, Landmark, Sunrise, Gift, CheckCircle } from 'lucide-react';
+import Link from 'next/link';
 
 interface Program {
   title: string;
@@ -302,10 +303,14 @@ export default function Program() {
 
                   {/* CTA */}
                   <div className="pt-4 border-t border-slate-200">
-                    <button className={`w-full py-4 px-6 rounded-xl bg-gradient-to-r ${program.color} text-white font-bold text-sm hover:shadow-lg hover:shadow-emerald-500/20 transform hover:scale-105 transition-all duration-300 opacity-90 hover:opacity-100 flex items-center justify-center gap-2`}>
-                      <span>Daftar Sebagai Generasi Pertama</span>
-                      <Sunrise className="w-5 h-5" />
-                    </button>
+                    <Link href={`https://psb.ahibs.id/`}>
+                      <button
+                        className={`w-full py-4 px-6 rounded-xl bg-gradient-to-r ${program.color} text-white font-bold text-sm hover:shadow-lg hover:shadow-emerald-500/20 transform hover:scale-105 transition-all duration-300 opacity-90 hover:opacity-100 flex items-center justify-center gap-2 cursor-pointer`}
+                      >
+                        <span>Daftar Sebagai Generasi Pertama</span>
+                        <Sunrise className="w-5 h-5" />
+                      </button>
+                    </Link>
                   </div>
                 </div>
 
@@ -375,18 +380,22 @@ export default function Program() {
               </div>
               
               <div className="flex flex-col gap-4">
-                <button className="bg-gradient-to-r from-amber-500 via-emerald-500 to-teal-500 text-white px-10 py-4 rounded-2xl font-bold text-xl hover:shadow-lg hover:shadow-amber-500/20 transform hover:scale-105 transition-all duration-300 flex items-center gap-3 group">
-                  <span>Daftar Sekarang</span>
-                  <div className="flex items-center gap-1 group-hover:translate-x-1 transition-transform duration-300">
-                    <Sunrise className="w-6 h-6" />
-                    <Sparkles className="w-5 h-5" />
-                  </div>
-                </button>
-                
-                <button className="border-2 border-emerald-500 text-emerald-600 px-8 py-3 rounded-2xl font-semibold hover:bg-emerald-50 transition-all duration-300 flex items-center gap-2 justify-center">
-                  <BookOpen className="w-5 h-5" />
-                  <span>Info Lengkap</span>
-                </button>
+                <Link href="https://psb.ahibs.id/">
+                  <button className="bg-gradient-to-r from-amber-500 via-emerald-500 to-teal-500 text-white px-10 py-4 rounded-2xl font-bold text-xl hover:shadow-lg hover:shadow-amber-500/20 transform hover:scale-105 transition-all duration-300 flex items-center gap-3 group w-full cursor-pointer">
+                    <span>Daftar Sekarang</span>
+                    <div className="flex items-center gap-1 group-hover:translate-x-1 transition-transform duration-300">
+                      <Sunrise className="w-6 h-6" />
+                      <Sparkles className="w-5 h-5" />
+                    </div>
+                  </button>
+                </Link>
+
+                <Link href="/assets/doc/brosur.jpg">
+                  <button className="border-2 border-emerald-500 text-emerald-600 px-8 py-3 rounded-2xl font-semibold hover:bg-emerald-50 transition-all duration-300 flex items-center gap-2 justify-center w-full cursor-pointer">
+                    <BookOpen className="w-5 h-5" />
+                    <span>Download Brosur</span>
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
