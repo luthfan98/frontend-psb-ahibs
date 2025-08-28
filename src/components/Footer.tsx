@@ -17,12 +17,6 @@ export default function Footer() {
     { name: 'YouTube', icon: Youtube, href: 'https://youtube.com/@pesantrenahibs', color: 'hover:text-red-400' },
   ];
 
-  const programs = [
-    'Tahfizh Al-Quran',
-    'Bahasa Arab & Inggris',
-    'Sains & Teknologi',
-    'Kewirausahaan',
-  ];
 
   return (
     <footer id="kontak" className="relative bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800 text-gray-300 overflow-hidden">

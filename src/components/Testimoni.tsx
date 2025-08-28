@@ -105,7 +105,7 @@ export default function DukunganTokoh() {
         </div>
 
         {/* Support Cards */}
-        <div className="grid grid-cols-2 lg:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
           {dukungan.map((item, index) => (
             <div 
               key={index} 

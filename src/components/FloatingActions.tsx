@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { ArrowUp, Phone, MessageCircle } from 'lucide-react';
+import { ArrowUp, Phone, MessageCircle, GraduationCap } from 'lucide-react';
 
 export default function FloatingActions() {
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -35,7 +35,7 @@ export default function FloatingActions() {
         <div className="flex flex-col gap-3">
           {/* WhatsApp Button */}
           <a
-            href="https://wa.me/6282812345678?text=Assalamualaikum, saya tertarik dengan pendaftaran santri baru"
+            href="https://wa.me/6281233785161?text=Assalamualaikum, saya tertarik dengan pendaftaran santri baru AHIBS"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 text-sm font-medium transform hover:scale-105 hover:-translate-y-1"
@@ -49,7 +49,7 @@ export default function FloatingActions() {
 
           {/* Call Button */}
           <a
-            href="tel:+622831234567"
+            href="https://psb.ahibs.id"
             className="group flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-4 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 text-sm font-medium transform hover:scale-105 hover:-translate-y-1"
             aria-label="Telepon sekarang"
           >
@@ -91,7 +91,7 @@ export default function FloatingActions() {
       <div className="fixed bottom-0 left-0 right-0 z-40 lg:hidden bg-white border-t border-gray-200 shadow-lg">
         <div className="flex">
           <a
-            href="https://wa.me/6282812345678?text=Assalamualaikum, saya tertarik dengan pendaftaran santri baru"
+            href="https://wa.me/6281233785161?text=Assalamualaikum, saya tertarik dengan pendaftaran santri baru AHIBS"
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1 flex items-center justify-center gap-2 py-4 bg-green-500 hover:bg-green-600 text-white font-medium transition-colors duration-200"
@@ -101,12 +101,12 @@ export default function FloatingActions() {
             <span>WhatsApp</span>
           </a>
           <a
-            href="tel:+622831234567"
-            className="flex-1 flex items-center justify-center gap-2 py-4 bg-blue-500 hover:bg-blue-600 text-white font-medium transition-colors duration-200"
-            aria-label="Telepon sekarang"
+            href="https://psb.ahibs.id"
+            className="flex-1 flex items-center justify-center gap-2 py-4 bg-orange-500 hover:bg-blue-600 text-white font-medium transition-colors duration-200"
+            aria-label="Daftar Sekarang"
           >
-            <Phone className="w-5 h-5" />
-            <span>Telepon</span>
+            <GraduationCap size={5} />
+            <span>Daftar Sekarang</span>
           </a>
         </div>
       </div>

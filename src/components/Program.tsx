@@ -164,7 +164,7 @@ export default function Program() {
                   <div className="flex-shrink-0 mt-0.5">
                     <CheckCircle className="w-6 h-6 text-amber-400 group-hover:text-amber-300 transition-colors duration-300 drop-shadow-sm" />
                   </div>
-                  <span className="text-emerald-50 font-medium leading-relaxed group-hover:text-white transition-colors duration-300">
+                  <span className="text-emerald-50 text-left font-medium leading-relaxed group-hover:text-white transition-colors duration-300">
                     {program}
                   </span>
                 </div>

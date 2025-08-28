@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { type ElementType } from 'react';
 import Image from 'next/image';
 import { Camera, X, ZoomIn, Calendar, MapPin, Heart, Users, Award, BookOpen } from 'lucide-react';
 
@@ -15,11 +14,6 @@ interface ImageItem {
   likes: number;
 }
 
-interface StatItem {
-  number: string;
-  label: string;
-  icon: ElementType;
-}
 
 export default function Galeri() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -82,12 +76,6 @@ export default function Galeri() {
     }
   ];
 
-  const stats: StatItem[] = [
-    { number: '500+', label: 'Santri Aktif', icon: Users },
-    { number: '15+', label: 'Tahun Berdiri', icon: Award },
-    { number: '25+', label: 'Program Unggulan', icon: BookOpen },
-    { number: '100%', label: 'Kepuasan Wali', icon: Heart },
-  ];
 
   const categories = [
     { id: 'all', label: 'Semua', icon: Camera },

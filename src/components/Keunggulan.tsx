@@ -1,6 +1,6 @@
 'use client';
 
-import { BookOpen, Landmark, Users, Award, Heart, Target, Star, Sparkles, Globe } from 'lucide-react';
+import { BookOpen, Landmark, Users, Award, Heart, Star, Sparkles, Globe } from 'lucide-react';
 import { type ElementType } from 'react';
 
 interface Feature {

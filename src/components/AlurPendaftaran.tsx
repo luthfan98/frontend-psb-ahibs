@@ -76,7 +76,7 @@ export default function AlurPendaftaran() {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
             Alur 
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600 ml-3">
-              Pendaftaran (Gel 1)
+              Pendaftaran <br/>(Gel 1)
             </span>
           </h2>
           <p className="text-slate-600 text-lg max-w-3xl mx-auto leading-relaxed">

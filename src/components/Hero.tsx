@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { ArrowRight, Play, Star, BookOpen, Calendar, MapPin, Sparkles, Heart, Building2, Zap } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Hero() {
   const highlights = [
@@ -201,7 +202,7 @@ export default function Hero() {
                   
                   {/* Background Image */}
                   <div className="absolute inset-0">
-                    <img 
+                    <Image 
                       src="/assets/img/card_home2.png"
                       alt="Pesantren Islamic Architecture"
                       className="w-full h-full object-cover"
